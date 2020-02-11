@@ -13,13 +13,56 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Oswald`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Karla`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Lora`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Rubik`,
+            variants: [`300`, `400`, `500`, `700`]
+          },
+          {
+            family: `Abel`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Muli`,
+            variants: [`300`, `400`, `700`]
+          },
+          {
+            family: `Montserrat`,
+            variants: [`300`, `400`, `700`]
+          },
+          {
+            family: `Work Sans`,
+            variants: [`300`, `400`, `700`]
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `sondhayni-site`,
+        short_name: `sondhayni-site`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
