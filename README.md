@@ -9,7 +9,7 @@
 </h1>
 
 ## 🚀 Things that are working
-_Configuration side:_
+_Configuration side_
   - Basic site + nav works
   - Netlify is configured with this repo
   - Domain has https!
@@ -20,7 +20,7 @@ _Site interaction_
   
 ## 🧐 What's left?
 
-_Configuration side:_
+_Configuration side_
   - [ ] Getting it to deploy correctly (do I need to understand deployment for this??)
   - [ ] uhh how does graphql querying work in gatsby lol
 
