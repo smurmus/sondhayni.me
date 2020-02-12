@@ -32,13 +32,13 @@ const NavLink = styled(Link)`
   }
 `;
 
-      // <nav class="collapse navbar-collapse navbar-right" role="navigation">
+// <nav class="collapse navbar-collapse navbar-right" role="navigation">
 
 const BottomNavBar = ({ }) => (
   <StickyFooter>
     <NavLinkContainer>
       <NavLink to="/about">about</NavLink>
-      <NavLink>writings</NavLink>
+      <NavLink to="/blog">writings</NavLink>
       <NavLink to="/resume">resume</NavLink>
       <NavLink>projects</NavLink>
     </NavLinkContainer>
