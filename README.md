@@ -23,6 +23,7 @@ _Site interaction_
 _Configuration side_
   - [ ] Getting it to deploy correctly (do I need to understand deployment for this??)
   - [ ] uhh how does graphql querying work in gatsby lol
+  - [ ] Figure out how to host/query/display pdf/files
 
 _Site interaction_
   - [ ] Make all pages responsive
