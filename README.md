@@ -9,22 +9,22 @@
 </h1>
 
 ## 🚀 Things that are working
-1. Configuration side: 
+_Configuration side:_
   - Basic site + nav works
   - Netlify is configured with this repo
   - Domain has https!
 
-2. Site interaction
+_Site interaction_
   - "Home" page basically complete
   - Index view for blog + individual posts mostly set up!
   
 ## 🧐 What's left?
 
-1. Configuration side: 
+_Configuration side:_
   - [ ] Getting it to deploy correctly (do I need to understand deployment for this??)
   - [ ] uhh how does graphql querying work in gatsby lol
 
-2. Site interaction
+_Site interaction_
   - [ ] Make all pages responsive
   - [ ] Write at least (1) actual blog post
   - [ ] Clean up the file structure
@@ -33,7 +33,8 @@
   - [ ] Resume/project pages. Maybe these should be something else entirely?
     ├── i.e. resume can just be a link on home, and project can be portfolio instead, which then that leaves the 4th tab free for some other creative content??
   
-3. Housekeeping
+_Housekeeping_
   - [ ] the domain currently points nowhere now...so get the site up and running as an "MVP" stat
   - [ ] Archiving the old site repo, if not deleting it
+  - [ ] delete any code within this project I don't understand/don't use
 
