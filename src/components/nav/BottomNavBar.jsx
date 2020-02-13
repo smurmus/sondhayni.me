@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from "gatsby"
+import { Link } from 'gatsby';
+import { TiHome } from 'react-icons/ti';
 
 const StickyFooter = styled.div`
   background-color: black;
@@ -28,7 +29,7 @@ const NavLink = styled(Link)`
   margin: 0 16px;
   &:hover {
     font-size: 22px;
-    font-weight: 500px;
+    font-weight: 600px;
   }
 `;
 
@@ -37,10 +38,12 @@ const NavLink = styled(Link)`
 const BottomNavBar = ({ }) => (
   <StickyFooter>
     <NavLinkContainer>
+      <NavLink>
+        <TiHome size={32} color="white" />
+      </NavLink>
       <NavLink to="/about">about</NavLink>
       <NavLink to="/blog">writings</NavLink>
-      <NavLink to="/resume">resume</NavLink>
-      <NavLink>projects</NavLink>
+      <NavLink to="/portfolio">portfolio</NavLink>
     </NavLinkContainer>
   </StickyFooter>
 );

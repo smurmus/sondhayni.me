@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from "gatsby";
-import { FaGithub, FaTwitter, FaLinkedin, FaCodepen } from 'react-icons/fa';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { FaGithub, FaTwitter, FaLinkedin, FaCodepen, FaFileAlt } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
-import Img from "gatsby-image";
-
+import Img from 'gatsby-image';
 
 const Fun = styled.div`
   font-family: ${props => props.font || 'inherit'};
@@ -80,11 +79,24 @@ const SocialIcon = styled.div`
   margin-right: 24px;
 `;
 
+
 const InfoBlock = () => {
   const [hoverImage, setImageHover] = useState(false);
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     allFile(filter: { extension: { eq: "pdf" } }) {
+  //       edges {
+  //         node {
+  //           publicURL
+  //           name
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   const query = graphql`
-    query BioImages {
+    query {
       me_cartoon: file(relativePath: { eq: "me_cartoon_head.png" }) {
         childImageSharp {
           fluid(maxWidth: 300, quality: 100) {
@@ -106,10 +118,19 @@ const InfoBlock = () => {
           }
         }
       }
+      allFile(filter: { sourceInstanceName: { eq: "docs" } }) {
+        edges {
+          node {
+            publicURL
+            name
+          }
+        }
+      }
     }
   `;
 
   const data = useStaticQuery(query);
+  const resumeUrl = data.allFile.edges[0].node.publicURL;
 
   return (
     <>
@@ -176,12 +197,31 @@ const InfoBlock = () => {
                 <IoMdMail size={32} color="black" />
               </SocialIcon>
             </a>
+            <a href={resumeUrl} download>
+              <SocialIcon>
+                <FaFileAlt size={32} color="black" />
+              </SocialIcon>
+            </a>
           </Socials>
         </TextBox>
       </Bio>
     </>
   );
 };
+
+
+// render() {
+//   // Note: this is an escape hatch and should be used sparingly!
+//   // Normally they recommend using `import` for getting asset URLs
+//   // as described in the “Adding Images, Fonts, and Files” page.
+//   return (
+//     <a
+//       rel="noopener noreferrer"
+//       href={withPrefix('/my_pdf.pdf')}
+//       target="_blank"> Click to see my pdf
+//     </a>
+//   )
+// }
 
 export default InfoBlock;
 // export default compose(

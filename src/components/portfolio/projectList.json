@@ -1,0 +1,42 @@
+[
+  {
+    "type": "experience",
+    "category": "tech",
+    "title": "World Food Programme: Maano",
+    "subtitle": "Client/contract work",
+    "blurb": "An e-commerce android app that enabled a virtual farmer's market for global rural areas",
+    "shareLink": "https://innovation.wfp.org/project/virtual-farmers-market",
+    "imgPath": "/maano-r.jpg",
+    "imgName": "wfp"
+  },
+  {
+    "type": "project",
+    "category": "tech",
+    "title": "Money Grows on Trees",
+    "subtitle": "Hackathon project",
+    "blurb": "A Minecraft inspired VR stock market game",
+    "shareLink": "https://devpost.com/software/money-grows-on-trees",
+    "imgPath": "/lahacks.jpg",
+    "imgName": "moneytrees"
+  },
+  {
+    "type": "project",
+    "category": "tech",
+    "title": "Marvis",
+    "subtitle": "Hackathon project",
+    "blurb": "A VR visualization of the Marvel API with speech recognition",
+    "shareLink": "https://devpost.com/software/marvis",
+    "imgPath": "/marvis.jpg",
+    "imgName": "marvis"
+  },
+  {
+    "type": "project",
+    "category": "design",
+    "title": "36 Days of Type",
+    "subtitle": "Visual design",
+    "blurb": "Uh something something a daily design thing",
+    "shareLink": "https://devpost.com/software/marvis",
+    "imgPath": "/marvis.jpg",
+    "imgName": "marvis"
+  }
+]

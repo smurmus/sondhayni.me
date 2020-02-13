@@ -46,7 +46,7 @@ const Date = styled.div`
 
 const Excerpt = styled.div`
 	margin-top: 16px;
-	font-family: 'Karla';
+	font-family: 'Lora';
 	font-size: 18px;
 	color: ${props => props.color || 'black'};
 	font-weight: ${props => props.weight || 400};

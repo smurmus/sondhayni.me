@@ -19,6 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `docs`,
+        path: `${__dirname}/src/docs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
       },
@@ -36,8 +43,16 @@ module.exports = {
             variants: [`400`, `700`]
           },
           {
+            family: `Source Sans Pro`,
+            variants: [`400`, `700`]
+          },
+          {
             family: `Karla`,
             variants: [`400`, `700`]
+          },
+          {
+            family: `Imprima`,
+            variants: [`300`, `400`, `700`]
           },
           {
             family: `Lora`,
