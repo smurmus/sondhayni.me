@@ -23,15 +23,20 @@ _Site interaction_
 _Configuration side_
   - [ ] Getting it to deploy correctly (do I need to understand deployment for this??)
   - [ ] uhh how does graphql querying work in gatsby lol
-  - [ ] Figure out how to host/query/display pdf/files
+  - [x] Figure out how to host/query/display pdf/files
+
+_Site content
+  - [ ] Add all relevant projects + links
+  - [ ] Create a basic "show" page for projects that don't link out to places (like visual stuff)
+  - [ ] Create a more case-study specific type show page
 
 _Site interaction_
-  - [ ] Make all pages responsive
+  - [x] Make all pages responsive (this is mostly true)
   - [ ] Write at least (1) actual blog post
   - [ ] Clean up the file structure
   - [ ] Clean up the styles (oh god)
   - [ ] What goes on the "about" page? Do I need/want one? What else would it be?
-  - [ ] Resume/project pages. Maybe these should be something else entirely?
+  - [x] ~Resume/project pages. Maybe these should be something else entirely?~ Portfolio + home links instead.
     ├── i.e. resume can just be a link on home, and project can be portfolio instead, which then that leaves the 4th tab free for some other creative content??
   
 _Housekeeping_

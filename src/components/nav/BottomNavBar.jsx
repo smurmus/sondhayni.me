@@ -6,7 +6,8 @@ import { TiHome } from 'react-icons/ti';
 const StickyFooter = styled.div`
   background-color: black;
   height: 72px;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   bottom: 0;
   display: flex;
   z-index: 100000;

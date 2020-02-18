@@ -1,7 +1,7 @@
 ---
-path: /blog/hello-world
-title: hello world
-date: 02/10/2020
+path: /blog/on-persistence
+title: on persistence
+date: 02/17/2020
 description: This will be a very very short description of what may be contained in this post.
 
 ---

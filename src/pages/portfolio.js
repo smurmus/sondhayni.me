@@ -10,17 +10,23 @@ import { BottomNavBar } from '../components';
 import { PortfolioItem } from '../components/portfolio';
 import projectList from '../components/portfolio/projectList';
 
+import { device } from '../components/mediaQuery';
+
 const Container = styled.div`
   background-color: #ffffff;
   height: 100vh;
-  padding: 100px;
+  padding: 24px;
   margin: 0;
   overflow: scroll;
+
+  @media ${device.tablet} {
+    padding: 100px;
+  }
 `;
 
 const Projects = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 `;
 

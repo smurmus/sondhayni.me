@@ -15,7 +15,8 @@ const Content = styled.div`
 const Header = styled.div`
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+  align-items: center;
+  align-content: center;
 `;
 
 const Title = styled(Link)`
@@ -37,19 +38,19 @@ const PostLink = styled.div`
 `;
 
 const Date = styled.div`
-	font-family: 'Abel';
-  font-size: 20px;
-  margin-top: 16px;
+	font-family: Work Sans;
+  font-size: 18px;
+  margin-left: 16px;
 	color: ${props => props.color || '#345e69'};
-	font-weight: ${props => props.weight || 700};
+	font-weight: 400;
 `;
 
 const Excerpt = styled.div`
 	margin-top: 16px;
-	font-family: 'Lora';
+	font-family: Roboto;
 	font-size: 18px;
 	color: ${props => props.color || 'black'};
-	font-weight: ${props => props.weight || 400};
+	font-weight: 300;
 `;
 
 
@@ -60,10 +61,10 @@ const PostItem = ({ post }) => {
         <PostLink bgColor="#7CAA4D">
           <Title to={post.frontmatter.path}>{post.frontmatter.title}</Title>
         </PostLink>
+        <Date>{post.frontmatter.date}</Date>
       </Header>
-      <Date>{post.frontmatter.date}</Date>
       <Excerpt>
-        {post.excerpt}
+        {post.frontmatter.description}
       </Excerpt>
     </Content>
   );

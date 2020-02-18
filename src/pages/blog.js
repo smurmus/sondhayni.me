@@ -8,12 +8,17 @@ import SEO from "../components/seo"
 
 import { BottomNavBar } from '../components';
 import { PostItem } from '../components/blog';
+import { device } from '../components/mediaQuery';
 
 const Container = styled.div`
   background-color: #ffffff;
   height: 100vh;
-  padding: 100px;
+  padding: 24px;
   margin: 0;
+
+  @media ${device.tablet} {
+    padding: 100px;
+  }
 `;
 
 const Blog = ({
@@ -54,6 +59,7 @@ export const pageQuery = graphql`
             date
             path
             title
+            description
           }
         }
       }
