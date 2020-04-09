@@ -3,7 +3,7 @@ import React from 'react';
 const App = () => {
   return (
     <div className="App">
-      <div style={{ height: 800 }} />
+      <div style={{ margin: 0, height: 800 }} />
     </div>
   );
 };

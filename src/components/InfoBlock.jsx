@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -7,6 +7,7 @@ import { IoMdMail } from 'react-icons/io';
 import Img from 'gatsby-image';
 
 import { device } from './mediaQuery';
+import './layout.css';
 
 const Fun = styled.div`
   font-family: ${props => props.font || 'DM Serif Display'};
@@ -27,8 +28,6 @@ const Fun = styled.div`
 `;
 
 const FunName = styled(Fun)`
-  margin-top: -24px;
-
   @media ${device.tablet} {
     margin-left: 64px;
   }
@@ -193,19 +192,19 @@ const InfoBlock = () => {
       <TextBox>
         <Fun color="#345e69" weight={600}>
           hello!
-          <FunName color="lightskyblue" weight={600}>
+            <FunName color="lightskyblue" weight={600}>
             sondhayni <Here> here</Here> 👋🏾
-          </FunName>
+            </FunName>
         </Fun>
         <SmallerFun color="coral" font="DM Serif Display" weight={400}>
           /n./ maker of art + tech
-        </SmallerFun>
+          </SmallerFun>
         <Description weight={400}>
           during the day I <b>build software</b>{' '}
           <Exp>@shoguninc</Exp>. I usually spend the rest of my time around
           coffee shops, (note)books, design theory,
           and dance studios.
-          <br />
+            <br />
           <br />
           previously{' '}
           <Exp bgColor="#7CAA4D">@rainforestqa</Exp>,{' '}
