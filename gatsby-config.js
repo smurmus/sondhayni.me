@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sondhayni's site`,
+    title: `sondhayni murmu`,
     description: `An exploration of...identity?`,
     author: `@smurmus`,
     social: {
@@ -35,15 +35,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Source Sans Pro`,
+            family: 'DM Serif Display',
             variants: [`400`, `700`]
           },
           {
@@ -51,31 +43,19 @@ module.exports = {
             variants: [`400`, `700`]
           },
           {
-            family: `Imprima`,
-            variants: [`300`, `400`, `700`]
-          },
-          {
             family: `Lora`,
             variants: [`400`, `700`]
-          },
-          {
-            family: `Rubik`,
-            variants: [`300`, `400`, `500`, `700`]
           },
           {
             family: `Abel`,
             variants: [`400`, `700`]
           },
           {
-            family: `Muli`,
+            family: `Poppins`,
             variants: [`300`, `400`, `700`]
           },
           {
-            family: `Montserrat`,
-            variants: [`300`, `400`, `700`]
-          },
-          {
-            family: `Work Sans`,
+            family: `Open Sans`,
             variants: [`300`, `400`, `700`]
           },
         ],

@@ -39,7 +39,7 @@ const NavLink = styled(Link)`
 const BottomNavBar = ({ }) => (
   <StickyFooter>
     <NavLinkContainer>
-      <NavLink>
+      <NavLink to="/">
         <TiHome size={32} color="white" />
       </NavLink>
       <NavLink to="/about">about</NavLink>

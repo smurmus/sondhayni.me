@@ -8,6 +8,11 @@
   an exploration of identity
 </h1>
 
+## 4/08/2020
+today we are living dangerously and smashing that deploy button, unfinished pages and all.
+the site is semi functional and has some basic info about me and you know what? the code is messy 
+at the moment. so what. I'll fix it.
+
 ## 🚀 Things that are working
 _Configuration side_
   - Basic site + nav works

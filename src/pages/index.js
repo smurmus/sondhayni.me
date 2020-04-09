@@ -1,10 +1,11 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components';
+import SEO from '../components/seo';
 
-import { InfoBlock, BottomNavBar } from '../components';
+import { InfoBlock, TopNav } from '../components';
 
 const Container = styled.div`
-  background-color: #ffffff;
+  background-color: #fff5ee;
   height: 100vh;
   margin: 0;
 `;
@@ -12,9 +13,10 @@ const Container = styled.div`
 const IndexPage = () => (
   <>
     <Container>
+      <TopNav />
+      <SEO title="hi" />
       <InfoBlock />
     </Container>
-    <BottomNavBar />
   </>
 );
 

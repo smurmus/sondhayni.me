@@ -9,7 +9,7 @@ import Img from 'gatsby-image';
 import { device } from './mediaQuery';
 
 const Fun = styled.div`
-  font-family: ${props => props.font || 'inherit'};
+  font-family: ${props => props.font || 'DM Serif Display'};
   font-size: 36px;
   color: ${props => props.color || '#53c8e5'};
   font-weight: ${props => props.weight};
@@ -43,34 +43,35 @@ const SmallerFun = styled.div`
   }
 `;
 
-
 const Description = styled.div`
-  font-family: Roboto;
+  font-family: Karla;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 36px;
   color: ${props => props.color || '#253f46'};
   font-weight: ${props => props.weight};
   margin-top: 16px;
   white-space: normal;
   width: 350px;
 
-  @media ${device.tablet} {
-    width: 500px;
-    font-size: 18px;
-  }
-
   @media ${device.laptop} {
-    margin: 32px 64px;
+    padding-right: 24px;
     line-height: 40px;
     font-size: 20px;
+    width: 100%;
   }
 `;
 
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
+
   @media ${device.tablet} {
     flex: 3;
+  }
+
+  @media ${device.laptop} {
+    margin-bottom: 0;
+    padding-top: 0;
   }
 `;
 
@@ -80,7 +81,8 @@ const Bio = styled.div`
   flex-direction: column;
   min-height: 100vh;
   max-width: 100%;
-  padding-bottom: 100px;
+  padding: 0 100px;
+  background-color: #fff5ee;
 
   @media ${device.laptop} {
     flex-direction: row;
@@ -90,7 +92,7 @@ const Bio = styled.div`
 
 
 const Exp = styled.span`
-  color: white; // ${props => props.color || '#1dc1ca'};
+  color: white;
   background-color: ${props => props.bgColor || '#387aa2'};
   text-align: center;
   padding: 8px;
@@ -102,25 +104,34 @@ const Me = styled(Img)`
 `;
 
 const ImgContainer = styled.div`
+  display: none;
+
   @media ${device.laptop} {
+    display: block;
     flex: 3;
+    margin: 16px;
+    align-self: stretch;
+  }
+`;
+
+const ImgContainerSmall = styled.div`
+  @media ${device.laptop} {
+    display: none;
   }
 
-  @media ${device.tablet} {
-    flex: 2;
-  }
-  margin: 16px;
+  flex: 1;
+  margin: 16px 16px -64px;
   align-self: stretch;
 `;
 
 const Socials = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin: 24px 0;
+  justify-content: center;
+  margin-top: 36px;
 
-  @media ${device.tablet} {
-    margin: 24px 64px;
+  @media ${device.laptop} {
+    justify-content: flex-start;
   }
 `;
 
@@ -178,33 +189,26 @@ const InfoBlock = () => {
 
   return (
     <Bio>
-      <ImgContainer>
-        <Me
-          fluid={data.halfCartoon.childImageSharp.fluid}
-        />
-      </ImgContainer>
       <TextBox>
-        <Fun color="#345e69" font="Work Sans" weight={600}>
+        <Fun color="#345e69" weight={600}>
           hello!
           <FunName color="lightskyblue" weight={600}>
             sondhayni <Here> here</Here> 👋🏾
           </FunName>
         </Fun>
-        <SmallerFun color="coral" font="Abel" weight={400}>
+        <SmallerFun color="coral" font="DM Serif Display" weight={400}>
           /n./ maker of art + tech
         </SmallerFun>
-        <Description weight={300}>
+        <Description weight={400}>
           during the day I <b>build software</b>{' '}
-          <Exp>@shoguninc</Exp>.
-          <br />
-          I usually spend the rest of my time around
+          <Exp>@shoguninc</Exp>. I usually spend the rest of my time around
           coffee shops, (note)books, design theory,
           and dance studios.
           <br />
           <br />
           previously{' '}
           <Exp bgColor="#7CAA4D">@rainforestqa</Exp>,{' '}
-          <Exp bgColor="lightskyblue">@world food programme</Exp>,{' '}
+          <Exp bgColor="lightskyblue" style={{ whiteSpace: 'pre' }}>@world food programme</Exp>,{' '}
           <Exp bgColor="#7CAA4D">@usc</Exp>
         </Description>
         <Socials>
@@ -234,9 +238,7 @@ const InfoBlock = () => {
             </SocialIcon>
           </a>
           <a href={resumeUrl} download>
-            <SocialIcon>
-              <FaFileAlt size={32} color="black" />
-            </SocialIcon>
+            <FaFileAlt size={32} color="black" />
           </a>
         </Socials>
       </TextBox>
@@ -259,6 +261,3 @@ const InfoBlock = () => {
 // }
 
 export default InfoBlock;
-// export default compose(
-//   withState('clicked', 'setClicked', false),
-// )(InfoBlock);

@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from "styled-components";
-import { Link } from "gatsby"
+import styled from 'styled-components';
+import { Link } from 'gatsby'
+
+import { device } from '../../components/mediaQuery';
 
 const Content = styled.div`
 	display: flex;
   flex-direction: column;
-  max-width: 700px;
-  background-color: snow;
-  padding: 32px;
   margin: 16px 0px 16px;
 `;
 
@@ -20,11 +19,10 @@ const Header = styled.div`
 `;
 
 const Title = styled(Link)`
-	font-family: 'Work Sans';
-	font-size: 36px;
+  font-size: 32px;
+  color: ${props => props.color || '#53c8e5'};
   font-weight: ${props => props.weight || 400};
   text-decoration: none;
-  color: white;
 `;
 
 const PostLink = styled.div`
@@ -45,12 +43,26 @@ const Date = styled.div`
 	font-weight: 400;
 `;
 
-const Excerpt = styled.div`
-	margin-top: 16px;
-	font-family: Roboto;
+const Excerpt = styled.span`
+  margin-left: 8px;
+  margin-top: 8px;
+	font-family: Karla;
 	font-size: 18px;
-	color: ${props => props.color || 'black'};
+	color: ${props => props.color || '#345e69'};
 	font-weight: 300;
+`;
+
+const Fun = styled.div`
+  font-family: ${props => props.font || 'DM Serif Display'};
+  font-weight: ${props => props.weight};
+
+  @media ${device.laptop} {
+    font-size: 52px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 48px;
+  }
 `;
 
 
@@ -58,14 +70,13 @@ const PostItem = ({ post }) => {
   return (
     <Content>
       <Header>
-        <PostLink bgColor="#7CAA4D">
+        <Fun color="#7CAA4D" weight={600}>
           <Title to={post.frontmatter.path}>{post.frontmatter.title}</Title>
-        </PostLink>
-        <Date>{post.frontmatter.date}</Date>
+        </Fun>
+        <Excerpt>
+          — {post.frontmatter.date}
+        </Excerpt>
       </Header>
-      <Excerpt>
-        {post.frontmatter.description}
-      </Excerpt>
     </Content>
   );
 };

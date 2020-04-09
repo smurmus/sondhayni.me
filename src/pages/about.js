@@ -1,25 +1,15 @@
 import React from 'react'
-import { Link, useStaticQuery } from 'gatsby'
+import { useStaticQuery } from 'gatsby'
 import styled from 'styled-components';
-import { TiHome } from 'react-icons/ti';
 import Img from 'gatsby-image';
 import SEO from '../components/seo'
-import { BottomNavBar } from '../components';
+import { TopNav } from '../components';
 import { device } from '../components/mediaQuery';
 
 const Container = styled.div`
-  background-color: #ffffff;
+  background-color: #fff5ee;
   height: 100vh;
-  padding: 24px;
   margin: 0;
-  
-  @media ${device.tablet} {
-    padding: 100px;
-  }
-`;
-
-const HomeLink = styled(Link)`
-	margin: 8px;
 `;
 
 const SubContainer = styled.div`
@@ -33,20 +23,44 @@ const SubContainer = styled.div`
 
 const Corkboard = styled(Img)`
   flex: 2;
+  height: 80vh;
+  align-self: stretch;
+  display: block;
 `;
 
 const Section = styled.div`
-  font-family: Roboto;
-  font-size: 18px;
-  color: 'black';
-  font-weight: 300;
-  margin: 0 16px;
+  font-family: Karla;
+  font-size: 16px;
+  color: #345e69;
+  font-weight: 400;
+  margin-right: 16px;
+  padding: 64px;
+  padding-right: 0;
   flex: 2;
 `;
 
 const Contact = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const Fun = styled.div`
+  font-family: ${props => props.font || 'DM Serif Display'};
+  font-size: 36px;
+  color: ${props => props.color || '#53c8e5'};
+  font-weight: ${props => props.weight};
+
+  @media ${device.laptop} {
+    font-size: 52px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 48px;
+  }
+`;
+
+const Emphasize = styled.span`
+  color: ${props => props.color || 'coral'};
 `;
 
 const About = () => {
@@ -56,23 +70,37 @@ const About = () => {
   return (
     <>
       <Container>
-        <HomeLink>
-          <TiHome size={32} color="black" />
-        </HomeLink>
-        <SEO title="About" />
+        <TopNav />
+        <SEO title="about" />
         <SubContainer>
           <Section>
-            I'm an engineer originally from New Jersey who uprooted and flew off to explore college in Los Angeles, California.
-            I graduated in May 2018 with a bachelor's degree in Computer Engineering and Computer Science and a minor in
-            3D Computer Graphics and Modeling from the University of Southern California!
+            <Fun color="#7CAA4D" weight={600}>
+              about
+            </Fun>
+            <br />
+            <>
+              I'm a <Emphasize>design-obsessed</Emphasize> engineer who's into identifying possibilities and problems and playing with ways to fix them.
+              my time is generally spent coding, writing, reading, gaming, or making art.
+            </>
+            <br />
+            <br />
 
-            This website is part showcase of some of my work, but mainly an exploration of identity, perspective, and
-            things completely unrelated to computer science. This is a work in progress.
+            I graduated from the <Emphasize>university of southern california</Emphasize> with a bachelor's in computer engineering (and a minor in
+            3d computer graphics and modeling!) and a mission to make the world a <Emphasize>kinder</Emphasize> place.
+            <br />
+            <br />
+
+            this website is part showcase of some of my work, but mainly an exploration of identity, perspective, and
+            things completely unrelated to computer science. <Emphasize>this is a work in progress.</Emphasize>
+
+            <br />
+            <br />
+            <b>central jersey ⟶ los angeles ⟶ san francisco ⟶ ?</b>
             <br />
             <br />
             <Contact>
-              <p><b>contact:</b> sondhayni@gmail.com</p>
-              <p><b>download resume</b></p>
+              <p><b>contact: </b><Emphasize>sondhayni@gmail.com</Emphasize></p>
+              <p><Emphasize color="lightskyblue"><b>download resume</b></Emphasize></p>
             </Contact>
           </Section>
           <Corkboard
@@ -81,7 +109,6 @@ const About = () => {
           />
         </SubContainer>
       </Container>
-      <BottomNavBar />
     </>
   );
 };
@@ -90,9 +117,9 @@ export default About;
 
 const imageQuery = graphql`
   query {
-    corkboard: file(relativePath: { eq: "corkboard.jpg" }) {
+    corkboard: file(relativePath: { eq: "me_half_cartoon.png" }) {
       childImageSharp {
-        fluid(maxWidth: 300, quality: 100) {
+        fluid(maxWidth: 200, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
