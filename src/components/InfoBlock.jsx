@@ -27,6 +27,8 @@ const Fun = styled.div`
 `;
 
 const FunName = styled(Fun)`
+  margin-top: -24px;
+
   @media ${device.tablet} {
     margin-left: 64px;
   }
@@ -63,6 +65,15 @@ const Description = styled.div`
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media ${device.tablet} {	
+    flex: 3;	
+  }
+
+  @media ${device.laptop} {	
+    margin-bottom: 0;	
+    padding-top: 0;	
+  }
 `;
 
 const Bio = styled.div`
