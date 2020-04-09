@@ -51,28 +51,18 @@ const Description = styled.div`
   font-weight: ${props => props.weight};
   margin-top: 16px;
   white-space: normal;
-  width: 350px;
+  width: 100%;
 
   @media ${device.laptop} {
     padding-right: 24px;
     line-height: 40px;
     font-size: 20px;
-    width: 100%;
   }
 `;
 
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-
-  @media ${device.tablet} {
-    flex: 3;
-  }
-
-  @media ${device.laptop} {
-    margin-bottom: 0;
-    padding-top: 0;
-  }
 `;
 
 const Bio = styled.div`
@@ -81,11 +71,12 @@ const Bio = styled.div`
   flex-direction: column;
   min-height: 100vh;
   max-width: 100%;
-  padding: 0 100px;
   background-color: #fff5ee;
+  padding: 64px;
 
   @media ${device.laptop} {
     flex-direction: row;
+    padding: 0 100px;
     padding-bottom: 0;
   }
 `;
@@ -149,7 +140,6 @@ const Here = styled.span`
 
 
 const InfoBlock = () => {
-  const [hoverImage, setImageHover] = useState(false);
   const query = graphql`
     query {
       me_cartoon: file(relativePath: { eq: "me_cartoon_head.png" }) {

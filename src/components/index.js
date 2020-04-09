@@ -1,4 +1,3 @@
-export { default as NavBar } from './nav/NavBar';
 export { default as BottomNavBar } from './nav/BottomNavBar';
 export { default as TopNav } from './nav/TopNav';
 export { default as ArrowKeys } from './nav/ArrowKeys';

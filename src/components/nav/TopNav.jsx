@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 import Logo from './Logo';
 import NavLinks from './NavLinks';
@@ -10,8 +9,7 @@ const Navigation = styled.nav`
   text-decoration: none;
   height: 10vh;
   display: flex;
-  background-color: transparent;
-  position: relative;
+  background-color: #fff5ee;
   justify-content: space-between;
   margin: 0 auto;
   padding-right: 1vw;
