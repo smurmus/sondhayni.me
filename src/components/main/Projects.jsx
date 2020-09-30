@@ -10,6 +10,8 @@ import projecttracker from '../../images/contractor_project_tracker.png';
 import cooloffers from '../../images/cool_offers.png';
 import daysoftype from '../../images/days_of_type.png';
 
+import { device } from '../mediaQuery';
+
 import '../styles.css';
 
 const Container = styled.div`
@@ -27,10 +29,10 @@ const ProjectBox = styled.div`
   flex-direction: column;
   position: relative;
   margin-top: 32px;
-  margin-right: 32px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  margin-right: 24px;
 
   &:after {
     content: '';
@@ -52,6 +54,10 @@ const ProjectBox = styled.div`
 
   &:hover::after {
     opacity: 1;
+  }
+
+  @media ${device.laptop} {
+    margin-right: 24px;
   }
 `;
 
