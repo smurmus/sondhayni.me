@@ -21,6 +21,8 @@ _Configuration side_
 
 _Site interaction_
   - Everything now lives on just the home page!
+  - Projects --> "Assorted works," which has some nice hover state animations and images, and everything that _can_ link out does.
+  - I think all the copy is mostly fine. I might update it later. We'll see.
   
 ## 🧐 What's left?
 
