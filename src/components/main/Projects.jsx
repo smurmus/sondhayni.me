@@ -113,7 +113,7 @@ const ExternalLink = styled.div`
 const projectInfo = [
   {
     title: 'ActiveAllies',
-    description: 'A web platform that helps adults to ' +
+    description: '24 hour designathon: A web platform that helps adults to ' +
       'understand social justice causes and encourages goal-driven social ' +
       'activism by breaking it down into two categories: learning and taking action. ',
     image: activeallies,
@@ -121,7 +121,8 @@ const projectInfo = [
   },
   {
     title: 'Krate',
-    description: 'A very helpful moving service woo more words here here',
+    description: '3-day UX design contest: An app prototype for a large-item moving service ' +
+      'that addresses UX gaps in existing services',
     image: krate,
     url: 'https://docs.google.com/presentation/d/1PcTFkdby1T0UzeSmtVvsTT4XcFUGotu5ixFb0jNYApE/edit?usp=sharing',
   },

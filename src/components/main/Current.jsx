@@ -20,7 +20,7 @@ const Details = styled.div`
   align-items: center;
 `;
 
-const ResumeLink = styled.a`
+const Link = styled.a`
   color: #162B4A;
 
   &:hover {
@@ -55,13 +55,18 @@ const Current = () => {
           I care deeply about people and believe in possibilities.
         </h3>
       </Details>
-      <h3 class="dark-blue-text bold">during the day I build things <u class="vibrant-blue-text">@shoguninc</u>.</h3>
+      <h3 class="dark-blue-text bold">
+        during the day I build things{' '}
+        <Link href="https://shoguninc.com" target="_blank" rel="noopener noreferrer">
+          <u>@shoguninc</u>
+        </Link>.
+      </h3>
       <h3 class="dark-blue-text">(previously: rainforest qa, world food programme, usc)</h3>
       <h3 class="dark-blue-text bold" style={{ marginTop: 24 }}>
         download my{' '}
-        <ResumeLink href={resumeUrl} download>
+        <Link href={resumeUrl} download>
           <u>resume</u>
-        </ResumeLink>.
+        </Link>.
       </h3>
     </Container>
   );
