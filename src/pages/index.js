@@ -10,7 +10,7 @@ import {
   About,
   Contact,
 } from '../components/main';
-import '../components/layout.css';
+import './index.css';
 
 const Container = styled.div`
   background-color: #ffffff;
