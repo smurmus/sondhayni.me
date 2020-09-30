@@ -20,8 +20,7 @@ _Configuration side_
   - Domain has https!
 
 _Site interaction_
-  - "Home" page basically complete
-  - Index view for blog + individual posts mostly set up!
+  - Everything now lives on just the home page!
   
 ## 🧐 What's left?
 
@@ -30,22 +29,21 @@ _Configuration side_
   - [ ] uhh how does graphql querying work in gatsby lol
   - [x] Figure out how to host/query/display pdf/files
 
-_Site content
-  - [ ] Add all relevant projects + links
-  - [ ] Create a basic "show" page for projects that don't link out to places (like visual stuff)
+_Site content_
+  - [x] Add all relevant projects + links
+  - [ ] Create a basic "show" page for projects that don't link out to places
   - [ ] Create a more case-study specific type show page
+  - [ ] **Update resume to be the latest one (once I get feedback)**
 
 _Site interaction_
-  - [x] Make all pages responsive (this is mostly true)
-  - [ ] Write at least (1) actual blog post
+  - [ ] **Make all pages responsive**
+  - [x] Write at least (1) actual blog post (technically it's in my drafts but still)
   - [ ] Clean up the file structure
   - [ ] Clean up the styles (oh god)
-  - [ ] What goes on the "about" page? Do I need/want one? What else would it be?
-  - [x] ~Resume/project pages. Maybe these should be something else entirely?~ Portfolio + home links instead.
-    ├── i.e. resume can just be a link on home, and project can be portfolio instead, which then that leaves the 4th tab free for some other creative content??
+    ├── i.e. specifically and most importantly `layout.css`. that file is very scary.
   
 _Housekeeping_
-  - [ ] the domain currently points nowhere now...so get the site up and running as an "MVP" stat
+  - [x] the domain currently points nowhere now...so get the site up and running as an "MVP" stat
   - [ ] Archiving the old site repo, if not deleting it
   - [ ] delete any code within this project I don't understand/don't use
 
