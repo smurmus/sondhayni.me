@@ -1,0 +1,126 @@
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: georgia, serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'Josefin Sans';
+  font-size: 42px;
+  font-weight: 600;
+}
+
+img {
+  border-style: none;
+}
+
+img {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Josefin Sans';
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h4 {
+  margin: 0;
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h5 {
+  margin: 0;
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.blue-text {
+  color: darkslategray;
+}
+
+.center {
+  text-align: center;
+}
+
+.dark-blue-bg {
+  background-color: #162B4A;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.extra-bold {
+  font-weight: 700;
+}
+
+.white-text {
+  color: white;
+}
+
+.dark-blue-text {
+  color: #162B4A;
+}
+
+.vibrant-blue-text {
+  color: #02bdd5;
+}
+
+.light-blue-text {
+  color: rgba(237, 237, 240, 0.47);
+}
+
+.typewriter {
+  background-color: white;
+  color: #02bdd5;
+  padding: 8px;
+  margin-left: 16px;
+}
