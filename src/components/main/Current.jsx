@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
+import { FiMapPin } from 'react-icons/fi';
 
 import '../styles.css';
 
@@ -26,6 +27,13 @@ const Link = styled.a`
   &:hover {
     color: #02bdd5;
   }
+`;
+
+const Location = styled.div`
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 `;
 
 const Current = () => {
@@ -68,6 +76,11 @@ const Current = () => {
           <u>resume</u>
         </Link>.
       </h3>
+      <Location>
+        <FiMapPin size={18} color="#162B4A" />
+        <div style={{ marginLeft: 8 }} />
+        <h4 class="dark-blue-text center">San Francisco, CA</h4>
+      </Location>
     </Container>
   );
 };
