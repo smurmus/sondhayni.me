@@ -5,21 +5,22 @@ import styled from 'styled-components';
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  font-family: Karla, sans-serif;
+  font-family: Josefin Sans;
   font-size: 18px;
   color: #345e69;
   margin: 0 16px;
+
+  &:hover {
+    color: #02bdd5;
+  }
 `;
 
 const NavLinks = ({ }) => (
   <>
-    <NavLink to="/about">about</NavLink>
+    <NavLink to="/#about-me">about</NavLink>
+    <NavLink to="/#projects">projects</NavLink>
     <NavLink to="/blog">writings</NavLink>
-    <NavLink to="/currently">currently</NavLink>
-    {/* <NavLink to="/portfolio">portfolio</NavLink> */}
-    {/* <NavLink to="/">
-      <TiHome size={32} color="#345e69" />
-    </NavLink> */}
+    <NavLink to="/#currently-at">currently</NavLink>
   </>
 );
 
