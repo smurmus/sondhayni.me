@@ -57,21 +57,21 @@ const Current = () => {
     <Container id="currently-at">
       <Details>
         <h3 class="dark-blue-text bold center">
-          I am a creative who happens to be a software engineer.
+          I am a creative person who loves to get technical.
         </h3>
         <h3 class="dark-blue-text center">
           I care deeply about people and believe in possibilities.
         </h3>
       </Details>
       <h3 class="dark-blue-text bold">
-        during the day I build things{' '}
+        During the day I build things{' '}
         <Link href="https://shoguninc.com" target="_blank" rel="noopener noreferrer">
           <u>@shoguninc</u>
         </Link>.
       </h3>
       <h3 class="dark-blue-text">(previously: rainforest qa, world food programme, usc)</h3>
       <h3 class="dark-blue-text bold" style={{ marginTop: 24 }}>
-        download my{' '}
+        Download my{' '}
         <Link href={resumeUrl} download>
           <u>resume</u>
         </Link>.

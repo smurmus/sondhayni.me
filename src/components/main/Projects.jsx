@@ -153,14 +153,14 @@ const projectInfo = [
     description: 'An idea made during a work hackathon for a new feature we wanted to see: ' +
       'a project tracker that went beyond just financial details',
     image: projecttracker,
-    url: '#'
+    url: ''
   },
   {
     title: 'Fun Loaders',
     description: 'A work hackathon project to have an interactive loading page, built using ' +
       'ThreeJS and WebGL',
     image: cooloffers,
-    url: '#'
+    url: ''
   }
 ];
 
@@ -176,9 +176,14 @@ const Projects = () => (
     </SubHeader>
     <ProjectsContainer>
       {projectInfo.map(project => (
-        <a href={project.url} class="dark-blue-text" target="_blank" rel="noreferrer noopener">
+        <a
+          {...(project.url !== '' ? { href: project.url } : {})}
+          class="dark-blue-text"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <ProjectBox>
-            {project.url !== '#' &&
+            {project.url !== '' &&
               <ExternalLink>
                 <FiExternalLink color="#162B4A" size={32} />
               </ExternalLink>

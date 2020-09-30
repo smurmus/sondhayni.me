@@ -59,12 +59,12 @@ const Identity = styled.div`
 `;
 
 const identities = [
-  'a software engineer.',
-  'a maker.',
-  'an artist.',
-  'a dancer.',
-  'a writer.',
-  'a designer.',
+  'a software engineer',
+  'a maker',
+  'an artist',
+  'a dancer',
+  'a writer',
+  'a designer',
 ];
 
 const Intro = () => (
