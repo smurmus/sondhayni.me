@@ -18,8 +18,6 @@ const Blog = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  console.log('EDGES', edges);
-
   // const Posts = edges
   //   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
   //   .map(edge => <PostItem key={edge.node.id} post={edge.node} />)
@@ -29,7 +27,7 @@ const Blog = ({
       <Container>
         <TopNav />
         <SEO title="blog" />
-        <div style={{ padding: 64, fontFamily: 'DM Serif Display', fontSize: 36, color: 'coral' }}>
+        <div style={{ padding: 64, fontFamily: 'Josefin Sans', fontSize: 36, color: '#02bdd5' }}>
           {/* {Posts} */}
           nothing here, yet!
         </div>
