@@ -30,7 +30,8 @@ const Socials = styled.div`
 
 const SocialIcon = styled.div`
   margin-right: 24px;
-  color: white
+  color: white;
+
   &:hover {
     color: #02bdd5;
   }
