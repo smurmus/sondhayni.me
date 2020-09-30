@@ -31,6 +31,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Josefin Sans',
+            variable: true,
+            weights: ['100..700']
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -52,10 +64,6 @@ module.exports = {
           },
           {
             family: `Poppins`,
-            variants: [`300`, `400`, `700`]
-          },
-          {
-            family: `Open Sans`,
             variants: [`300`, `400`, `700`]
           },
         ],
