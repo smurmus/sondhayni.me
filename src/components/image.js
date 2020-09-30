@@ -30,12 +30,4 @@ const Image = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-// Image.propTypes = {
-//   name: PropTypes.string,
-// };
-
-// Image.defaultProps = {
-//   name: 'gatsby-astronaut.png',
-// };
-
 export default Image
