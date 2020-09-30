@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FiMapPin } from 'react-icons/fi';
 
+import { device } from '../mediaQuery';
+
 import '../styles.css';
 
 const Container = styled.div`
@@ -17,8 +19,12 @@ const Container = styled.div`
 
 const Details = styled.div`
   margin-bottom: 48px;
-  padding: 0 200px;
   align-items: center;
+  padding: 0 64px;
+
+  @media ${device.laptopL} {
+    padding: 0 200px;
+  }
 `;
 
 const Link = styled.a`
@@ -51,7 +57,10 @@ const Current = () => {
   `;
 
   const data = useStaticQuery(fileQuery);
-  const resumeUrl = data.allFile.edges[0].node.publicURL;
+
+  // I'll use my actual resume with the "download" prop on the href once it's updated
+  const resumeUrl = 'https://www.linkedin.com/in/sondhayni-murmu/';
+  //data.allFile.edges[0].node.publicURL;
 
   return (
     <Container id="currently-at">
@@ -72,7 +81,7 @@ const Current = () => {
       <h3 class="dark-blue-text">(previously: rainforest qa, world food programme, usc)</h3>
       <h3 class="dark-blue-text bold" style={{ marginTop: 24 }}>
         Download my{' '}
-        <Link href={resumeUrl} download>
+        <Link href={resumeUrl} target="_blank" rel="noopener noreferrer">
           <u>resume</u>
         </Link>.
       </h3>

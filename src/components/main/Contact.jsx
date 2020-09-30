@@ -93,9 +93,9 @@ const Contact = () => {
             <IoMdMail size={32} color="inherit" />
           </SocialIcon>
         </a>
-        <a href={resumeUrl} download>
+        {/* <a href={resumeUrl} download>
           <FaFileAlt size={32} color="white" />
-        </a>
+        </a> */}
       </Socials>
       <Email>
         <h4 class="white-text center">sondhayni@gmail.com</h4>
