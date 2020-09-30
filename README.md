@@ -8,7 +8,15 @@
   an exploration of identity
 </h1>
 
-## 4/08/2020
+
+## 09/30/2020
+between yesterday and today I basically redid the whole site with a vague vision of what I wanted it to be.
+I completely scrapped a design I had been working on in figma, but that's fine, I actually do like this.
+it's bright and kind of fun and a little mixed up, but I think that's the point. I think I will keep this 
+single page paradigm, so the only other page will be the blog posts themselves, so setting up gatsby won't have 
+been a complete waste.
+
+## 04/08/2020
 today we are living dangerously and smashing that deploy button, unfinished pages and all.
 the site is semi functional and has some basic info about me and you know what? the code is messy 
 at the moment. so what. I'll fix it.
