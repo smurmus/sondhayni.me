@@ -47,7 +47,7 @@ const ProjectBox = styled.div`
   &:hover {
     background-color: black;
     background-blend-mode: multiply;
-    transform: scale(1.01, 1.01);
+    transform: scale(1.05, 1.05);
   }
 
   &:hover::after {
