@@ -2,22 +2,40 @@ import React from 'react'
 import styled from 'styled-components';
 import SEO from '../components/seo';
 
-import { InfoBlock, TopNav } from '../components';
+import { TopNav } from '../components';
+import {
+  Intro,
+  Current,
+  Projects,
+  About,
+  Contact,
+} from '../components/main';
+import '../components/layout.css';
 
 const Container = styled.div`
-  background-color: #fff5ee;
+  background-color: #ffffff;
   height: 100vh;
   margin: 0;
+  margin-bottom: 100px;
+`;
+
+const Stuff = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const IndexPage = () => (
-  <>
-    <Container>
-      <TopNav />
-      <SEO title="hi" />
-      <InfoBlock />
-    </Container>
-  </>
+  <Container>
+    <TopNav />
+    <SEO title="hi" />
+    <Stuff>
+      <Intro />
+      <Current />
+      <Projects />
+      <About />
+      <Contact />
+    </Stuff>
+  </Container>
 );
 
 
