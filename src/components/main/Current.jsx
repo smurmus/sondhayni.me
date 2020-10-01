@@ -78,7 +78,7 @@ const Current = () => {
           <u>@shoguninc</u>
         </Link>.
       </h3>
-      <h3 class="dark-blue-text">(previously: rainforest qa, world food programme, usc)</h3>
+      <h4 class="dark-blue-text">(previously: Rainforest QA, World Food Programme, USC)</h4>
       <h3 class="dark-blue-text bold" style={{ marginTop: 24 }}>
         Download my{' '}
         <Link href={resumeUrl} target="_blank" rel="noopener noreferrer">

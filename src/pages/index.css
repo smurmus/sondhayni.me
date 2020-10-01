@@ -219,23 +219,29 @@ img {
   padding-right: 0;
   padding-top: 0;
 }
+
+/** custom styles @smurmus **/
+/** weights: 600, 400, 300 **/
 h1 {
+  font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  padding: 0;
+  margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
 }
+
+
+/** color styles **/
+.white {
+  color: white;
+}
+
 h6 {
   margin-left: 0;
   margin-right: 0;
