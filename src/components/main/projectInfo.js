@@ -6,7 +6,7 @@ import projecttracker from '../../images/contractor_project_tracker.png';
 import cooloffers from '../../images/cool_offers.png';
 import daysoftype from '../../images/days_of_type.png';
 
-export default projectInfo = [
+export const projectInfo = [
   {
     title: 'ActiveAllies',
     description: '24 hour designathon: A web platform that helps adults to ' +

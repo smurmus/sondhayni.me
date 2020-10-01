@@ -4,7 +4,7 @@ import { FiExternalLink } from 'react-icons/fi';
 
 import { white, darkBlue, lightBeige } from '../../utils/colors';
 import { device } from '../mediaQuery';
-import projectInfo from './projectInfo';
+import { projectInfo } from './projectInfo';
 
 const Container = styled.div`
   padding: 48px 100px;
