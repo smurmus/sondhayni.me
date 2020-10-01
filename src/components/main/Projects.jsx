@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { white, darkBlue, lightBlue } from '../../utils/colors';
+import { white, darkBlue, lightBeige } from '../../utils/colors';
 import { device } from '../mediaQuery';
 import projectInfo from './projectInfo';
 
 const Container = styled.div`
   padding: 48px 100px;
   min-height: 600px;
-  background-color: ${lightBlue};
+  background-color: ${lightBeige};
   color: ${darkBlue};
 `;
 
