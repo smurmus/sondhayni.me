@@ -236,6 +236,75 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
+h2 {
+  font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+  font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+h4 {
+  font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+h5 {
+  font-family: 'Karla', -apple-system, Fira Sans, sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  font-family: 'Karla', -apple-system, Fira Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
 
 /** color styles **/
 .white {
@@ -304,16 +373,6 @@ dl {
   margin-bottom: 1.45rem;
 }
 dd {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-p {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;

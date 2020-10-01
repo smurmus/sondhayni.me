@@ -2,22 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 import { FiExternalLink } from 'react-icons/fi';
 
-import marvis from '../../images/marvis.jpg';
-import moneytrees from '../../images/money_trees_2.png';
-import krate from '../../images/Krate.png';
-import activeallies from '../../images/activeallies_white.png';
-import projecttracker from '../../images/contractor_project_tracker.png';
-import cooloffers from '../../images/cool_offers.png';
-import daysoftype from '../../images/days_of_type.png';
-
+import { white, darkBlue, lightBlue } from '../../utils/colors';
 import { device } from '../mediaQuery';
-
-import '../styles.css';
+import projectInfo from './projectInfo';
 
 const Container = styled.div`
   padding: 48px 100px;
   min-height: 600px;
-  background-color: #fff5ee;
+  background-color: ${lightBlue};
+  color: ${darkBlue};
 `;
 
 const ProjectBox = styled.div`
@@ -70,7 +63,8 @@ const ProjectImg = styled.img`
 `;
 
 const ProjectTitle = styled.div`
-  background-color: white;
+  background-color: ${white};
+  color: ${darkBlue};
   padding: 16px;
   height: 52px;
   display: flex;
@@ -116,65 +110,12 @@ const ExternalLink = styled.div`
   opacity: 0.8;
 `;
 
-const projectInfo = [
-  {
-    title: 'ActiveAllies',
-    description: '24 hour designathon: A web platform that helps adults to ' +
-      'understand social justice causes and encourages goal-driven social ' +
-      'activism by breaking it down into two categories: learning and taking action. ',
-    image: activeallies,
-    url: 'https://devpost.com/software/activeallies'
-  },
-  {
-    title: 'Krate',
-    description: '3-day UX design contest: An app prototype for a large-item moving service ' +
-      'that addresses UX gaps in existing services',
-    image: krate,
-    url: 'https://docs.google.com/presentation/d/1PcTFkdby1T0UzeSmtVvsTT4XcFUGotu5ixFb0jNYApE/edit?usp=sharing',
-  },
-  {
-    title: 'Money Grows On Trees',
-    description: 'A Minecraft inspired VR stock market game backed by ' +
-      'historic data from BlackRock’s Aladdin API, engaging and educating ' +
-      'players on basic stock transactions',
-    image: moneytrees,
-    url: 'https://devpost.com/software/money-grows-on-trees'
-  },
-  {
-    title: 'Marvis',
-    description: 'A VR visualization of the Marvel API with speech recognition: ' +
-      'built with Unity, viewed through Oculus Rift, and Myo gesture control',
-    image: marvis,
-    url: 'https://devpost.com/software/marvis',
-  },
-  {
-    title: '36 Days of Type',
-    description: 'My first participation in this fun daily challenge to creatively ' +
-      'interpret the Latin Alphabet.',
-    image: daysoftype,
-    url: 'https://dribbble.com/shots/14296438-36-Days-Of-Type'
-  },
-  {
-    title: 'Contractor Project Tracker',
-    description: 'An idea made during a work hackathon for a new feature we wanted to see: ' +
-      'a project tracker that went beyond just financial details',
-    image: projecttracker,
-    url: ''
-  },
-  {
-    title: 'Fun Loaders',
-    description: 'A work hackathon project to have an interactive loading page, built using ' +
-      'ThreeJS and WebGL',
-    image: cooloffers,
-    url: ''
-  }
-];
 
 const Projects = () => (
   <Container id="projects">
-    <h3 class="dark-blue-text bold">Assorted work</h3>
+    <h2>Assorted work</h2>
     <SubHeader>
-      <h5 class="dark-blue-text">
+      <h5>
         A collection of things I've worked on, from the past few years to now.
         These projects range from visual designs and prototypes to things I've made
         with other people at hackathons...and are mostly up to date.
@@ -191,14 +132,14 @@ const Projects = () => (
           <ProjectBox>
             {project.url !== '' &&
               <ExternalLink>
-                <FiExternalLink color="#162B4A" size={32} />
+                <FiExternalLink color={darkBlue} size={32} />
               </ExternalLink>
             }
             <ProjectImg src={project.image} />
             <ProjectTitle>
-              <h4 class="dark-blue-text center">{project.title}</h4>
+              <h4 class="center">{project.title}</h4>
               <ProjectDescription>
-                <h5>{project.description}</h5>
+                <p>{project.description}</p>
               </ProjectDescription>
             </ProjectTitle>
           </ProjectBox>

@@ -9,15 +9,15 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+/* h3 {
   margin: 0;
   font-family: 'Josefin Sans';
   font-size: 32px;
   font-weight: 300;
   line-height: 40px;
-}
+} */
 
-h4 {
+/* h4 {
   margin: 0;
   font-family: 'Josefin Sans';
   font-size: 20px;
@@ -29,7 +29,7 @@ h5 {
   font-family: 'Karla';
   font-size: 18px;
   font-weight: 400;
-}
+} */
 
 .blue-text {
   color: darkslategray;
