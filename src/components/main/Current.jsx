@@ -4,23 +4,26 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { FiMapPin } from 'react-icons/fi';
 
 import { device } from '../mediaQuery';
-
-import '../styles.css';
+import { teal, darkBlue } from '../../utils/colors';
 
 const Container = styled.div`
-  padding: 48px 100px;
+  padding: 48px;
   min-height: 400px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+
+  @media ${device.tablet} {
+    padding: 48px 100px;
+  }
 `;
 
 const Details = styled.div`
   margin-bottom: 48px;
   align-items: center;
-  padding: 0 64px;
 
   @media ${device.laptopL} {
     padding: 0 200px;
@@ -28,10 +31,10 @@ const Details = styled.div`
 `;
 
 const Link = styled.a`
-  color: #162B4A;
+  color: ${darkBlue};
 
   &:hover {
-    color: #02bdd5;
+    color: ${teal};
   }
 `;
 
@@ -63,32 +66,32 @@ const Current = () => {
   //data.allFile.edges[0].node.publicURL;
 
   return (
-    <Container id="currently-at">
+    <Container>
       <Details>
-        <h3 class="dark-blue-text bold center">
+        <h2>
           I am a creative person who loves to get technical.
-        </h3>
-        <h3 class="dark-blue-text center">
+        </h2>
+        <h3 class="center">
           I care deeply about people and believe in possibilities.
         </h3>
       </Details>
-      <h3 class="dark-blue-text bold">
+      <h3>
         During the day I build things{' '}
         <Link href="https://shoguninc.com" target="_blank" rel="noopener noreferrer">
           <u>@shoguninc</u>
         </Link>.
       </h3>
-      <h4 class="dark-blue-text">(previously: Rainforest QA, World Food Programme, USC)</h4>
-      <h3 class="dark-blue-text bold" style={{ marginTop: 24 }}>
+      <h4>(previously: Rainforest QA, World Food Programme, USC)</h4>
+      <h3 style={{ marginTop: 24 }}>
         Download my{' '}
         <Link href={resumeUrl} target="_blank" rel="noopener noreferrer">
           <u>resume</u>
         </Link>.
       </h3>
       <Location>
-        <FiMapPin size={18} color="#162B4A" />
+        <FiMapPin size={18} color="{darkBlue}" />
         <div style={{ marginLeft: 8 }} />
-        <h4 class="dark-blue-text center">San Francisco, CA</h4>
+        <h4>San Francisco, CA</h4>
       </Location>
     </Container>
   );

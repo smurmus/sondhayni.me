@@ -7,14 +7,23 @@ import { device } from '../mediaQuery';
 import { projectInfo } from './projectInfo';
 
 const Container = styled.div`
-  padding: 48px 100px;
+  padding: 48px 24px;
   min-height: 600px;
   background-color: ${lightBeige};
   color: ${darkBlue};
+
+  @media ${device.tablet} {
+    padding: 48px;
+  }
+
+  @media ${device.laptop} {
+    padding: 48px 100px;
+    min-height: 600px;
+  }
 `;
 
 const ProjectBox = styled.div`
-  width: 320px;
+  width: 100%;
   height: 320px;
   border-radius: 6px;
   border: 1px solid lightskyblue;
@@ -25,7 +34,6 @@ const ProjectBox = styled.div`
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  margin-right: 24px;
 
   &:after {
     content: '';
@@ -47,6 +55,10 @@ const ProjectBox = styled.div`
 
   &:hover::after {
     opacity: 1;
+  }
+
+  @media ${device.tablet} {
+    width: 320px;
   }
 
   @media ${device.laptop} {
@@ -94,6 +106,12 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media ${device.laptop} {
+    justify-content: flex-start;
+  }
 `;
 
 const SubHeader = styled.div`

@@ -305,6 +305,16 @@ p {
   text-rendering: optimizeLegibility;
 }
 
+.center {
+  text-align: center;
+}
+
+.typewriter {
+  background-color: white;
+  color: #02bdd5;
+  padding: 8px;
+  margin-left: 16px;
+}
 
 /** color styles **/
 .white {

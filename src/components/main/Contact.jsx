@@ -12,34 +12,53 @@ import {
 import { IoMdMail } from 'react-icons/io';
 import { device } from '../mediaQuery';
 
+import { teal, white, darkBlue } from '../../utils/colors';
+
 const Container = styled.div`
-  padding: 48px;
-  height: 150px;
+  padding: 16px;
+  min-height: 150px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  background-color: #162B4A;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: ${darkBlue};
+
+  @media ${device.tablet} {
+    justify-content: space-between;
+    padding: 48px;
+  }
 `;
 
 const Socials = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media ${device.tablet} {
+    justify-content: flex-start;
+  }
 `;
 
 const SocialIcon = styled.div`
-  margin-right: 24px;
+  margin-right: 16px;
   color: white;
 
   &:hover {
-    color: #02bdd5;
+    color: ${teal};
+  }
+
+  @media ${device.tablet} {
+    margin-right: 24px;
   }
 `;
 
 const Email = styled.div`
   display: flex;
   align-items: center;
+  color: ${white};
 `;
 
 const Contact = () => {
@@ -61,7 +80,6 @@ const Contact = () => {
 
   return (
     <Container>
-      {/* <h3 class="white-text bold">Other places</h3> */}
       <Socials>
         <a href="https://github.com/smurmus" target="_blank" rel="noopener noreferrer">
           <SocialIcon>
@@ -98,7 +116,7 @@ const Contact = () => {
         </a> */}
       </Socials>
       <Email>
-        <h4 class="white-text center">sondhayni@gmail.com</h4>
+        <h4 style={{ marginBottom: 0 }}>sondhayni@gmail.com</h4>
       </Email>
     </Container>
   );
