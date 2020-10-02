@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 
 import corkboard from '../../images/corkboard.jpg';
-import { device } from '../mediaQuery';
+import { device } from '../../utils/mediaQuery';
 
 import { teal, white, darkBlue } from '../../utils/colors';
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 
-import { device } from '../../components/mediaQuery';
+import { device } from '../../utils/mediaQuery';
 
 const Content = styled.div`
 	display: flex;

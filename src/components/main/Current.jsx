@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FiMapPin } from 'react-icons/fi';
 
-import { device } from '../mediaQuery';
+import { device } from '../../utils/mediaQuery';
 import { teal, darkBlue } from '../../utils/colors';
 
 const Container = styled.div`

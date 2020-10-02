@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import me from '../../images/me_chair.png';
 
 import { lightBlue } from '../../utils/colors';
-import { device } from '../mediaQuery';
+import { device } from '../../utils/mediaQuery';
 
 const Container = styled.div`
   padding-right: 0;

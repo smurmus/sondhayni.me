@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FiExternalLink } from 'react-icons/fi';
 
 import { white, darkBlue, lightBeige } from '../../utils/colors';
-import { device } from '../mediaQuery';
+import { device } from '../../utils/mediaQuery';
 import { projectInfo } from './projectInfo';
 
 const Container = styled.div`

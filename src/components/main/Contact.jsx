@@ -10,7 +10,7 @@ import {
   FaDribbble,
 } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
-import { device } from '../mediaQuery';
+import { device } from '../../utils/mediaQuery';
 
 import { teal, white, darkBlue } from '../../utils/colors';
 
