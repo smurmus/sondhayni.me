@@ -5,7 +5,7 @@ import { FaFolderOpen } from 'react-icons/fa';
 import { Link } from "gatsby";
 import { BottomNavBar } from '../components';
 
-import { device } from '../components/mediaQuery';
+import { device } from '../utils/mediaQuery';
 
 const Container = styled.div`
   background-color: #ffffff;

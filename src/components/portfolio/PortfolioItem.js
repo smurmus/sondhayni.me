@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import projectList from './projectList';
 import Img from 'gatsby-image';
 
-import { device } from '../mediaQuery';
+import { device } from '../utils/mediaQuery';
 
 const Content = styled.div`
 	display: flex;
