@@ -8,6 +8,12 @@
   an exploration of identity
 </h1>
 
+## 10/01/2020
+I updated the styles to be a bit less chaotic, and have tried to meet some accessibility guidelines as well as
+I was able, primarily around semantic HTML. also deleted a bunch of stuff I didn't need and made everything
+responsive (well some of it still looks not optimal. but it'll do for now.) Also the files and componenents
+are more logically organized rather than...whatever was going on before. I forgot images take a while to load,
+so I have to use the fancy gatsby pre-loader at some point for all the images I have. TBD.
 
 ## 09/30/2020
 between yesterday and today I basically redid the whole site with a vague vision of what I wanted it to be.
@@ -46,9 +52,9 @@ _Site content_
   - [ ] **Update resume to be the latest one (once I get feedback)**
 
 _Site interaction_
-  - [ ] **Make all pages responsive**
+  - [x] Make all pages responsive
   - [x] Write at least (1) actual blog post (technically it's in my drafts but still)
-  - [ ] Clean up the file structure
+  - [x] Clean up the file structure
   - [ ] Clean up the styles (oh god)
     ├── i.e. specifically and most importantly `layout.css`. that file is very scary.
   
