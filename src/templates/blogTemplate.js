@@ -1,10 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import { graphql } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
+import { graphql } from 'gatsby'
 import { FaFolderOpen } from 'react-icons/fa';
-import { Link } from "gatsby";
-import { BottomNavBar } from '../components';
-
+import { Link } from 'gatsby';
 import { device } from '../utils/mediaQuery';
 
 const Container = styled.div`
@@ -71,7 +69,6 @@ export default function Template({
           />
         </div>
       </Container>
-      <BottomNavBar />
     </>
   )
 }
