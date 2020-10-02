@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import SEO from '../components/seo'
 import { TopNav } from '../components';
-import { device } from '../components/mediaQuery';
+import { device } from '../utils/mediaQuery';
 
 const Container = styled.div`
   background-color: #fff5ee;
