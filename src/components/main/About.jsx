@@ -55,11 +55,11 @@ const About = () => (
           what people want and need, even when they don't explicitly say it.
         </p>
         <p>
-          I graduated from the <b>University of Southern California</b> with a bachelor's in Computer Engineering & Computer Science (and a minor in
-          3d Computer Graphics and Modeling!) and a mission to make the world a <b>kinder</b> place.
+          I graduated from the <b>University of Southern California</b> with a bachelor's in Computer Engineering & Computer Science and a minor in
+          3D Computer Graphics and Modeling, with a mission to make the world a <b>kinder</b> place.
         </p>
         <p>
-          I have a lot of hobbies, so I try to split my "down" time between puzzles, writing, reading, gaming, or making art.
+          I have a wide range hobbies, so I try to split my "down" time between puzzles, writing, reading, gaming, or making art.
         </p>
         <p>
           This website is part showcase of some of my work, but mainly an exploration of identity, perspective, and
