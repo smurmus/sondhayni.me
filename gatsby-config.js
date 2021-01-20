@@ -51,34 +51,34 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: 'DM Serif Display',
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Karla`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Lora`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Abel`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `700`]
-          },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: 'DM Serif Display',
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Karla`,
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Lora`,
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Abel`,
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Poppins`,
+    //         variants: [`300`, `400`, `700`]
+    //       },
 
-        ],
-      },
-    },
+    //     ],
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
