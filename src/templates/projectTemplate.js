@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import { device } from '../utils/mediaQuery';
 import { TopNav } from '../components';
 
+
 const Container = styled.div`
   background-color: #ffffff;
   height: 100vh;
@@ -50,38 +51,28 @@ const Title = styled(Link)`
 `;
 
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+export default function Template({ data }) {
+  const { projectsJson } = data // data.projectsJson holds your post data
+  console.log('PROJECTS:::', data);
+  const { subheader, header } = projectsJson
   return (
-      <Container>
+      <div>
         <TopNav />
-        <BlogHome to="/blog">
-          <FaFolderOpen size={32} color="black" />
-        </BlogHome>
         <div className="blog-post">
-          <Title>{frontmatter.title}</Title>
-          <h2>{frontmatter.date}</h2>
-          <Content
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <h2>{header}</h2>
+          <h2>{subheader}</h2>
         </div>
-      </Container>
+      </div>
   )
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date
-        path
-        title
-      }
+  query ($projectPath: String!) {
+    projectsJson(path: { eq: $projectPath }) {
+      title
+      header
+      subheader
+      imgPath
     }
   }
 `

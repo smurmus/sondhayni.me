@@ -6,10 +6,11 @@ import { teal, darkBlue } from '../../utils/colors';
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  font-family: Josefin Sans;
+  font-family: Barlow;
   font-size: 18px;
   color: ${darkBlue};
   margin: 0 16px;
+  font-weight: 600;
 
   &:hover {
     color: ${teal};

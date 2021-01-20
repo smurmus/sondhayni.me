@@ -222,7 +222,120 @@ img {
 
 /** custom styles @smurmus **/
 /** weights: 600, 400, 300 **/
+
+/** FIESTY REVAMP START **/
+.svg-7:hover path {
+  d: path("M2,5 S2,14 4,5 S7,8 8,4")
+}
+
+h0 {
+  font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  font-style: italic;
+  color: #E22431;
+  /* letter-spacing: 0.02em; */
+}
+
 h1 {
+  font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  /* letter-spacing: 0.02em; */
+  color: black;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 800;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  letter-spacing: 0.02em;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+  font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  /* letter-spacing: 0.02em; */
+  color: black;
+  font-size: 32px;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h4 {
+  font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  color: black;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+caption {
+  font-family: 'Caption', -apple-system, Fira Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h5 {
+  font-family: 'Petrona', -apple-system, Fira Sans, sans-serif;
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: 400;
+  color: inherit;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  font-family: 'Petrona', -apple-system, Fira Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+/** FIESTY REVAMP END **/
+
+/* h1 {
   font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
   font-size: 48px;
   line-height: 1.1;
@@ -234,9 +347,9 @@ h1 {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
-h2 {
+/* h2 {
   font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
   font-size: 32px;
   line-height: 1.1;
@@ -248,9 +361,9 @@ h2 {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
-h3 {
+/* h3 {
   font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
   font-size: 24px;
   line-height: 1.1;
@@ -262,9 +375,9 @@ h3 {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
-h4 {
+/* h4 {
   font-family: 'Josefin Sans', -apple-system, Fira Sans, sans-serif;
   font-size: 20px;
   line-height: 1.1;
@@ -276,9 +389,9 @@ h4 {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
-h5 {
+/* h5 {
   font-family: 'Karla', -apple-system, Fira Sans, sans-serif;
   font-size: 24px;
   line-height: 1.1;
@@ -290,9 +403,9 @@ h5 {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
-p {
+/* p {
   font-family: 'Karla', -apple-system, Fira Sans, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -303,7 +416,7 @@ p {
   margin-bottom: 1rem;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
+} */
 
 .center {
   text-align: center;

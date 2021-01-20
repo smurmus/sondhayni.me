@@ -1,0 +1,16 @@
+[
+  {
+    "path": "move-together",
+    "header": "UX Research / Case Study",
+    "title": "MoveTogether",
+    "subheader": "A Moving App",
+    "imgPath": "../../src/images/move-together.png"
+  },
+  {
+    "path": "krate",
+    "header": "UX Design / Hackathon",
+    "title": "Krate",
+    "subheader": "A Moving App",
+    "imgPath": "images/Krate.png"
+  }
+]

@@ -1,0 +1,278 @@
+---
+path: move-together
+title: MoveTogether
+subtitle: UX Case Study
+descriptor: A Moving App
+breadcrumbs: [Projects, UX Case Study]
+date: 02/10/2020
+# imagePath: '../images/corkboard.png'
+imagePath: 'move-together-solid-thumbnail'
+description: An organization app designed to make moving with others feel painless and easy
+overviewHeaders: [Team, Skills, Tools, Timeline]
+team: [Myself*]
+skills: [User research, Coding data]
+tools: [Figma, Notion]
+timeline: Dec 2020
+titleColor: '#FF575F'
+overviewColor: '#FFE1DE'
+
+---
+
+import { CustomImage } from 'components/utils'
+
+### Background
+<br />
+This project began as the result of a UX Hackathon I did back in June 2020 (you can find v1 here).
+The prompt was simple and open-ended: *design a (digital) product that helps people relocate to a new city or country.*
+<br />
+<br />
+In v1, my team and I chose a specific aspect of moving and targeted all of our research and work towards that focus,
+given the limited time we had during the hackathon. 
+<br />
+<br />
+Months later, I noticed there were a lot of people I knew directly or indirectly moving places, which
+renewed my interest in the original question. I wanted to know more about people's experiences and figure out
+what I hadn't even considered in v1. In v2—this version—I dove headfirst into more exploratory user research,
+until I came across a problem I thought would be interesting to solve.
+<br />
+<br />
+
+---
+
+<h2 style={{ lineHeight: '1.2em', color: '#FF575F' }}>
+  <span style={{ color: '#000' }}>How might we </span>
+  enable people to easily and asynchronously coordinate moving with others?
+</h2>
+<br />
+
+---
+
+<br />
+
+### Research
+<br />
+
+#### User Interviews
+
+Because I was looking for new information *and* anything I may have missed in a previous user interview,
+I reviewed earlier research from v1 on top of speaking to more people. Similar to v1, I narrowed my scope
+to people I knew had moved recently, and I maintained a short list of standard questions to cover. But
+this time around, I started my conversations as broadly as possible—"So how do you feel about moving?"
+
+From there, I let my interviewees' answers guide the questions I asked them. Even though each interview
+went into different specifics, after coding and mapping the data, I found all of it could be captured
+by four general themes:
+
+<CustomImage src="themes-on-notes.png"  alt="four themes"/>
+
+<br />
+
+<br />
+
+#### Key Findings & Insights
+
+When I compiled my findings, I noticed a particular trend across these themes, which helped me articulate the audience I would be designing for.
+<br />
+<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flexGrow: 1, flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
+  {[1, 2, 3, 4, 5].map(item => (
+    <div style={{ padding: 16, width: 236, maxHeight: 300 }}>
+      <CustomImage src={`insight_compact_${item}.png`} alt={`insight #${item}`} />
+    </div>
+  ))}
+</div>
+
+
+<br />
+
+
+#### A Persona is Born
+
+<CustomImage src="emily-persona.png"  alt="emily nguyen persona"/>
+
+<br />
+<br />
+
+#### Market Research
+
+<br />
+
+After brainstorming possible solutions (that ranged from "is this even possible?" to "this would be so simple to do")
+and mapping them onto a feasibility matrix, I went in search of existing products that said
+"[I can do zat!](https://www.popmatters.com/star-trek-i-can-do-zat-anton-yelchins-legacy-2495416138.html)"
+
+
+<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flexGrow: 1, flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
+  <div style={{ padding: 16, width: 180, maxHeight: 200 }}>
+    <CustomImage src="moving-waldo-logo.png"  alt="moving-waldo-logo" />
+  </div>
+  <div style={{ padding: 16, width: 180, maxHeight: 200 }}>
+    <CustomImage src="moved-logo.png"  alt="moved.com-logo"/>
+  </div>
+  <div style={{ padding: 16, width: 180, maxHeight: 200 }}>
+    <CustomImage src="task-rabbit-full-logo.png"  alt="task-rabbit-logo"/>
+  </div>
+  <div style={{ padding: 16, width: 180, maxHeight: 200 }}>
+    <CustomImage src="sortly-logo.png"  alt="sortly-logo"/>
+  </div>
+</div>
+
+<br />
+
+I went through each product's available flows and made note of what it did well and any frustrations I had, which I then shaped into design "opportunities" I could pursue. 
+
+<br />
+
+Each app provided a specific value and set of features that, unsurprisingly, they each did well. They were fine tuned and comprehensive
+(to an overwhelming degree in some cases). However, I noticed that none of these apps targeted what I chose to focus on: *collaboration*.
+Sure, Task Rabbit could help Emily get a mover, and Moving Waldo would let her select services she wanted to set up at her new home—but
+they served _only_ her.  
+
+<br />
+<br />
+
+### Ideation
+
+<br />
+
+#### High level user flow
+
+A high level overview of the main flows in the final designs-where blue is a "screen" and "green" modules
+refer to flows that I further mapped out during the actual design process.
+
+<CustomImage src="user-flow.png"  alt="user flow"/>
+
+<br />
+<br />
+
+### Final Artifacts
+
+<br />
+
+After breaking out the high level user flow into a more detailed chart, I was able to put together
+mid-fidelity wireframes/designs to reflect the main flows, and the specific problems I chose to tackle.
+
+<br/>
+
+#### Welcome Carousel
+
+Moving is stressful, so the apps we use shouldn't be. I was hoping to evoke a sense of calm, warmth, and
+friendliness with the color palette.
+
+<CustomImage src="welcome-screens.png"  alt="welcome carousel"/>
+
+<br />
+<br />
+
+#### Sign-up Flow
+
+Signing up for something new and highly specific is often a high friction process. By attaching a user
+to their email or number, they don't have to remember something new, and they can access their account
+quickly at any time with the OTP (one time password).
+
+<CustomImage src="sign-up-screens.png"  alt="sign up screens"/>
+
+<br />
+<br />
+
+#### First Note Creation Flow
+
+In my user testing, a common initial reaction I got was "Wait...no plus button? Why am I swiping?" because it's
+such a common pattern. For my purposes, I wanted to design a quicker, more intuitive way to interact 
+with the app to create a new note. 
+
+No one had trouble with the first swipe up motion to reveal the note screen. And most interestingly, each
+person swiped back down completely naturally when they were done with the note, expecting it note to be in their "Hub."
+
+<CustomImage src="first-note-swipe.png"  alt="first note swipe"/>
+<CustomImage src="first-note-onboarding-1.png"  alt="first note onboarding 1"/>
+<CustomImage src="first-note-onboarding-2.png"  alt="first note onboarding 2"/>
+
+<br />
+<br />
+
+#### Tag a "Moving Mate/Buddy"
+
+<CustomImage src="tag-a-mate-v1.png"  alt="tag moving buddy flow"/>
+
+<br />
+<br />
+
+#### Create Box Flow
+
+<CustomImage src="create-box.png"  alt="create box flow"/>
+
+<br />
+<br />
+
+#### Interactions in the "Hub"
+
+<CustomImage src="moving-hub.png"  alt="moving hub"/>
+
+<br />
+<br />
+
+#### Interactions with Boxes
+
+<CustomImage src="box-explained.png"  alt="box explained"/>
+
+<br />
+<br />
+
+#### Testing & Iterations
+
+After my intial round of designs, I went back to some of the people I spoke with to gather feedback.
+Below is an updated version of the "Tag a Moving Buddy Flow" I changed after someone was confused and lost about adding new media to a note without
+any sense of where it would appear.
+
+<CustomImage src="user-feedback-ex.png"  alt="user feedback example"/>
+
+
+<br />
+<br />
+
+### Next Steps & Takeaways
+
+<br />
+
+From the beginning, this project was meant to be more of a research based exploration to validate an idea/solution (to a problem
+I found from that exploration). There are dozens of other features I thought about that I didn't spec out. There are also many
+little details that I think could be cases studies of their own right, such as:
+
+- How would this app handle "box conflicts?" What would it look like to "merge" boxes if they got consolidated in real life?
+
+- What's the best way to handle replies to a note? Threading isn't a priority, and it's not meant to be a place to chat,
+so what's the best way to keep that communication clear? 
+
+#### Metrics
+
+To measure how much "friction" there really is:
+Calculating an "accuracy score" for each action a user tries to do, factoring in how many times they are successful and how
+direct of a path they take to complete the action.
+
+To measure ease of use + speed:
+Observe/track how long it takes people to create new boxes or notes, and see if there are patterns among users for the types
+of notes that are more or less popular.
+
+<br />
+
+
+#### What Next?
+
+If I were to keep going I'd first do some more rounds of user testing and convert that into a high fidelity prototype. In addition to
+the scenarios above, it would be interesting to consider integrating with other apps. (For example, being able to embed Venmo request inside
+a note you've assigned to someone)
+
+<br />
+
+
+#### Challenges & Lessons Learned
+
+As a developer, I had to fight my instinct and gut throughout this process, because my brain defaults to asking "so how feasible is it
+to build this and what would you need?" It's helpful to eventually define constraints, of course, but this was practice in holding those
+instincts at the door when doing initial explorations.
+
+<br />
+
+I also learned that at some point you just have to decide what direction to take and run with it. After I had brainstormed a long list of ideas
+and thoughts, I had to be very disciplined about how I cut it down to a singular idea to pursue.
+

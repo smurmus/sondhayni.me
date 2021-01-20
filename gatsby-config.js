@@ -11,6 +11,14 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Barlow:100,200,300,400,500,600,700,800,900']
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -36,10 +44,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Josefin Sans',
+            family: 'Petrona',
             variable: true,
-            weights: ['100..700']
-          }
+            weights: ['100..900']
+          },
         ]
       }
     },
@@ -67,19 +75,36 @@ module.exports = {
             family: `Poppins`,
             variants: [`300`, `400`, `700`]
           },
+
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    "gatsby-transformer-json",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content`,
+        name: `content`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content/work`,
+        name: 'work',
+      },
+    },
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `sondhayni-site`,
         short_name: `sondhayni-site`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#FFFCFB`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/s-icon.png`,

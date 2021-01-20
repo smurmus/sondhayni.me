@@ -5,8 +5,9 @@ import Logo from './Logo';
 import NavLinks from './NavLinks';
 
 const Navigation = styled.nav`
-  position: sticky;
+  position: fixed;
   text-decoration: none;
+  width: 100%;
   height: 10vh;
   display: flex;
   background-color: #fff5ee;
@@ -16,7 +17,6 @@ const Navigation = styled.nav`
   padding-left: 3vw;
   z-index: 2;
   align-self: center;
-
   @media (max-width: 768px) {
     height: 8vh;
     top: 0;
