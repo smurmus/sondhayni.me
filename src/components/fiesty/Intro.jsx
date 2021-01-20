@@ -9,8 +9,16 @@ const Greeting = styled.div`
 	display: flex;
 	flex-direction: column;
 	background-color: ${lightBeige};
-	padding: 64px 152px;
+	padding: 64px;
 	flex: 1;
+
+	@media ${device.tablet} {
+		padding: 64px 152px;
+	}
+
+	@media ${device.tablet} {
+		padding: 64px 152px;
+  }
 `;
 
 const Name = styled.div`
@@ -20,18 +28,24 @@ const Name = styled.div`
 const SelfPortait = styled.div`
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	position: relative;
 	flex: 1;
-	margin-bottom: 36px;
+	// margin-bottom: 120px;
 	margin-top: 64px;
+	background-color: '#fff5ee';
 `;
 
 const Sketch = styled.img`
 	height: auto;
 	width: 380px;
 	resize: contain;
-	position: absolute;
 	right: 0;
+
+  @media ${device.tablet} {
+		position: absolute;
+  }
 `;
 
 const Intro = () => {

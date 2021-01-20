@@ -4,13 +4,23 @@
     "header": "UX Research / Case Study",
     "title": "MoveTogether",
     "subheader": "A Moving App",
-    "imgPath": "../../src/images/move-together.png"
+    "imgPath": "move-together-solid-thumbnail.png",
+    "bgColor": "#FCC3C6"
   },
   {
-    "path": "krate",
+    "path": "active-allies",
+    "header": "Design Concept / Designathon",
+    "title": "ActiveAllies",
+    "subheader": "Educational Activism Site",
+    "imgPath": "aa-desktop-mockup.png",
+    "bgColor": "#D3DBEF"
+  },
+  {
+    "path": "/",
     "header": "UX Design / Hackathon",
     "title": "Krate",
     "subheader": "A Moving App",
-    "imgPath": "images/Krate.png"
+    "imgPath": "Krate.png",
+    "bgColor": "#DFF5EC"
   }
 ]

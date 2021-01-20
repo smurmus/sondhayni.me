@@ -104,7 +104,7 @@ module.exports = {
         name: `sondhayni-site`,
         short_name: `sondhayni-site`,
         start_url: `/`,
-        background_color: `#FFFCFB`,
+        background_color: `#fff5ee`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/s-icon.png`,

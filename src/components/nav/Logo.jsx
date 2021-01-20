@@ -13,7 +13,7 @@ const Logo = () => {
 
   const query = graphql`
     query {
-      meCartoon: file(relativePath: { eq: "me_cartoon_head.png" }) {
+      meCartoon: file(relativePath: { eq: "smurmus-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 100, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -28,7 +28,7 @@ const Logo = () => {
   return (
     <NavLink to="/">
       <Img
-        style={{ width: 64, height: 64 }}
+        style={{ width: 48, height: 48 }}
         fluid={data.meCartoon.childImageSharp.fluid}
         alt="logo"
       />

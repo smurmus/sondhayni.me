@@ -14,6 +14,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String!
       subheader: String!
       imgPath: String!
+      bgColor: String!
     }
   `
   createTypes(typeDefs)

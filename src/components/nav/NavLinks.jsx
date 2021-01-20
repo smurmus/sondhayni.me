@@ -24,9 +24,9 @@ const NavLink = styled(Link)`
 
 const NavLinks = () => (
   <>
-    <NavLink to="/#about-me">about</NavLink>
-    <NavLink to="/#projects">projects</NavLink>
-    <NavLink to="/blog">writings</NavLink>
+    <NavLink to="/about">about</NavLink>
+    <NavLink to="/work">projects</NavLink>
+    {/* <NavLink to="/blog">writings</NavLink> */}
   </>
 );
 

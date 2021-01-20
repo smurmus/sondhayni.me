@@ -1,0 +1,36 @@
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 40%);
+  max-width: 500px;
+}
+
+.overviewDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.overview h4 {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
