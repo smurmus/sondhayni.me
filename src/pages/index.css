@@ -224,16 +224,14 @@ img {
 /** weights: 600, 400, 300 **/
 
 /** FIESTY REVAMP START **/
-.svg-7:hover path {
-  d: path("M2,5 S2,14 4,5 S7,8 8,4")
-}
-
 h0 {
   font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
+  /* font-size: 10vw; */
   font-size: 120px;
   font-weight: 800;
   font-style: italic;
   color: #E22431;
+  margin-bottom: 16px;
   /* letter-spacing: 0.02em; */
 }
 
@@ -242,6 +240,7 @@ h1 {
   /* letter-spacing: 0.02em; */
   color: black;
   font-size: 48px;
+  /* font-size: 48px; */
   line-height: 58px;
   font-weight: 800;
   margin-left: 0;
@@ -256,13 +255,14 @@ h2 {
   font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
   letter-spacing: 0.02em;
   color: black;
+  /* font-size: 3vw; */
   font-size: 32px;
   font-weight: 600;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  /* margin-top: 1rem; */
   padding: 0;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 1rem; */
   text-rendering: optimizeLegibility;
 }
 
@@ -270,6 +270,7 @@ h3 {
   font-family: 'Barlow', -apple-system, Fira Sans, sans-serif;
   /* letter-spacing: 0.02em; */
   color: black;
+  /* font-size: 3vw; */
   font-size: 32px;
   font-weight: 800;
   text-rendering: optimizeLegibility;
@@ -309,6 +310,7 @@ caption {
 h5 {
   font-family: 'Petrona', -apple-system, Fira Sans, sans-serif;
   font-size: 24px;
+  /* font-size: 2vw; */
   line-height: 45px;
   font-weight: 400;
   color: inherit;
@@ -320,8 +322,39 @@ h5 {
   text-rendering: optimizeLegibility;
 }
 
+@media screen and (max-width: 550px) {
+  h0 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h0 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  h0 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
+
 p {
   font-family: 'Petrona', -apple-system, Fira Sans, sans-serif;
+  /* font-size: 1.5vw; */
   font-size: 18px;
   font-weight: 400;
   color: black;

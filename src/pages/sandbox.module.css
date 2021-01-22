@@ -1,0 +1,19 @@
+.codepen {
+  height: auto;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.sandbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex: 1;
+  padding: 0 48px 100px;
+}

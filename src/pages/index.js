@@ -5,13 +5,8 @@ import { graphql } from "gatsby"
 
 import { TopNav, Footer } from '../components';
 import { device } from '../utils/mediaQuery';
-import {
-  Current,
-  Projects,
-  About,
-  Contact,
-} from '../components/main';
-import { Intro, ProjectsIndex } from '../components/fiesty';
+import { lightBeige } from '../utils/colors';
+import { Intro, ProjectsIndex, ProjectList } from '../components/fiesty';
 import './index.css';
 
 const Container = styled.div`
@@ -23,10 +18,15 @@ const Container = styled.div`
 `;
 
 const Stuff = styled.div`
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding-top: 48px;
+	background-color: ${lightBeige};
+
+  @media ${device.tablet} {
+    padding-top: 100px;
+	}
 `;
 
 const Dashed = styled.div`
@@ -34,8 +34,6 @@ const Dashed = styled.div`
   height: 2px;
   border-top: 1px #E22431 dashed;
 `;
-
-const arr = [0, 1, 2, 3]
 
 const IndexPage = ({
   data: {
@@ -48,7 +46,7 @@ const IndexPage = ({
       <SEO title="hi" />
       <Stuff>
         <Intro />
-        <ProjectsIndex projects={edges} />
+        <ProjectList projects={edges} />
       </Stuff>
       <Footer />
     </Container>

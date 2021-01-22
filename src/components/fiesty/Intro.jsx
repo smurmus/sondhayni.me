@@ -9,16 +9,14 @@ const Greeting = styled.div`
 	display: flex;
 	flex-direction: column;
 	background-color: ${lightBeige};
-	padding: 64px;
+	padding: 32px 24px 0;
 	flex: 1;
+	max-width: 100%;
 
 	@media ${device.tablet} {
-		padding: 64px 152px;
+		padding-left: 64px;
+		padding-right: 64px;
 	}
-
-	@media ${device.tablet} {
-		padding: 64px 152px;
-  }
 `;
 
 const Name = styled.div`
@@ -29,18 +27,17 @@ const SelfPortait = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	position: relative;
 	flex: 1;
-	// margin-bottom: 120px;
-	margin-top: 64px;
-	background-color: '#fff5ee';
+	// margin-top: 16px;
+	background-color: #fff5ee;
 `;
 
 const Sketch = styled.img`
 	height: auto;
 	width: 380px;
-	resize: contain;
+	resize: auto;
 	right: 0;
 
   @media ${device.tablet} {
@@ -48,21 +45,29 @@ const Sketch = styled.img`
   }
 `;
 
+const Branding = styled.div`
+
+		@media ${device.tablet} {
+			padding-left: 56px;
+		}
+	`;
+
 const Intro = () => {
-	console.log('INTRO::', portraitSketch)
 	return (
 		<SelfPortait>
 			<Greeting>
 				<h2>hello! my name is</h2>
-				<Name>
-					<h0>sondhayni</h0>
+				<h0>
+					<Name>
+						sondhayni
 				</Name>
-				<div style={{ paddingLeft: 56 }}>
+				</h0>
+				<Branding>
 					<h2>
 						& I’m an interdisciplinary maker of art + tech who cares deeply about people and possibilities.
 					</h2>
 					<h5>During the day I build things @shoguninc.</h5>
-				</div>
+				</Branding>
 			</Greeting>
 			<Sketch src={portraitSketch} />
 		</SelfPortait>

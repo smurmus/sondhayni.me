@@ -5,13 +5,19 @@ import { Link } from 'gatsby';
 import krate from '../../images/Krate.png';
 import activeAllies from '../../images/activeallies_white.png';
 import { lightBeige } from '../../utils/colors';
+import { device } from '../../utils/mediaQuery';
+
 import { CustomImage } from '../utils';
 
 const Container = styled.div`
 	background-color: ${lightBeige};
 	display: flex;
 	flex-direction: column;
-	padding: 150px;
+	padding: 64px 24px 0;
+
+	@media ${device.tablet} {
+		padding: 64px 150px;
+	}
 `;
 
 const Row = styled.div`
@@ -33,30 +39,15 @@ const Item = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 32px 0;
-	// border-radius: 20px;
   width: 100%;
 	height: auto;
-	
-	&:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-		width: 100%;
-		height: auto;
-    opacity: 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: opacity 0.3s ease-in-out;
-  }
 
   &:hover {
-    background-color: black;
+		background-color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
     background-blend-mode: multiply;
     transform: scale(1.02, 1.02);
-  }
-
-	&:hover::after {
-    opacity: 1;
   }
 `;
 
@@ -74,34 +65,15 @@ const Image = styled.img`
 `;
 
 const ImageContainer = styled.div`
-	height: 360px;
-	width: 360px;
-	maxWidth: 400px;
+	height: 220px;
+	width: 100%;
+	maxWidth: 300px;
 	resize: contain;
 `;
 
 const ProjectLink = styled(Link)`
   text-decoration: none;
 `;
-
-
-const projects = [
-	{
-		title: 'MoveSort',
-		description: 'UX Research / Case Study',
-		imgSrc: krate,
-	},
-	{
-		title: 'Krate',
-		description: 'UX Design / Hackathon',
-		imgSrc: krate,
-	},
-	{
-		title: 'ActiveAllies',
-		description: '',
-		imgSrc: activeAllies,
-	}
-];
 
 const ProjectsIndex = ({ projects }) => {
 

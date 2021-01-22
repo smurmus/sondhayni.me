@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import { teal, darkBlue } from '../../utils/colors';
+import { red, darkBlue } from '../../utils/colors';
 
 const NavLink = styled(Link)`
   text-decoration: none;
@@ -13,7 +13,7 @@ const NavLink = styled(Link)`
   font-weight: 600;
 
   &:hover {
-    color: ${teal};
+    color: ${red};
   }
 
   @media (max-width: 768px) {
@@ -25,7 +25,8 @@ const NavLink = styled(Link)`
 const NavLinks = () => (
   <>
     <NavLink to="/about">about</NavLink>
-    <NavLink to="/work">projects</NavLink>
+    <NavLink to="/#projects">work</NavLink>
+    <NavLink to="/sandbox">sandbox</NavLink>
     {/* <NavLink to="/blog">writings</NavLink> */}
   </>
 );
