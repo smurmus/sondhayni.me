@@ -5,22 +5,22 @@ import { graphql } from "gatsby"
 
 import { TopNav, Footer } from '../components';
 import { device } from '../utils/mediaQuery';
-import { lightBeige } from '../utils/colors';
+import { offwhite,  lightBeige } from '../utils/colors';
 import { Intro, ProjectsIndex, ProjectList } from '../components/fiesty';
 import './index.css';
 
 const Container = styled.div`
   background-color: #fff5ee;
-  height: 100vh;
   margin: 0;
-  margin-bottom: 100px;
   flex: 1;
+  height: 100%;
 `;
 
 const Stuff = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-height: 100%;
   padding-top: 48px;
 	background-color: ${lightBeige};
 
@@ -40,17 +40,17 @@ const IndexPage = ({
     allProjectsJson: { edges },
   },
 }) => (
-  <>
+  <div style={{ position: 'relative' }}>
+    <TopNav />
     <Container>
-      <TopNav />
       <SEO title="hi" />
       <Stuff>
         <Intro />
-        <ProjectList projects={edges} />
+        {/* <ProjectList projects={edges} /> */}
       </Stuff>
-      <Footer />
     </Container>
-  </>
+      <Footer />
+  </div>
 );
 
 

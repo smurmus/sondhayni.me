@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { white, darkBlue, lightBeige } from '../../utils/colors';
+import { white, darkBlue, offwhite } from '../../utils/colors';
 import { device } from '../../utils/mediaQuery';
 import { projectInfo } from './projectInfo';
 
 const Container = styled.div`
   padding: 48px 24px;
   min-height: 600px;
-  background-color: ${lightBeige};
+  background-color: ${offwhite};
   color: ${darkBlue};
 
   @media ${device.tablet} {

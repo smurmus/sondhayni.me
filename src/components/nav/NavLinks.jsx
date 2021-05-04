@@ -59,12 +59,12 @@ const NavLinks = () => {
   return (
     <>
       <NavLink to="/about">about</NavLink>
-      <NavLink to="/#projects">work</NavLink>
+      <NavLink to="/work">work</NavLink>
       <NavLink to="/sandbox">sandbox</NavLink>
-      <ResumeLink href={resumeURL} download>
+      {/* <ResumeLink href={resumeURL} download>
         resume
+      </ResumeLink> */}
         {/* {file.node.name} */}
-      </ResumeLink>
       {/* <NavLink to="/blog">writings</NavLink> */}
     </>
   );

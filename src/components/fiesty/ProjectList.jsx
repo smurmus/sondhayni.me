@@ -4,13 +4,13 @@ import { Link } from 'gatsby';
 
 import krate from '../../images/Krate.png';
 import activeAllies from '../../images/activeallies_white.png';
-import { lightBeige } from '../../utils/colors';
+import { offwhite } from '../../utils/colors';
 import { device } from '../../utils/mediaQuery';
 
 import { CustomImage } from '../utils';
 
 const Container = styled.div`
-	background-color: ${lightBeige};
+	background-color: ${offwhite};
 	display: flex;
 	// flex-direction: column;
   padding: 64px 24px 0;

@@ -1,11 +1,12 @@
 .bar {
   width: 100%;
-  color: '#E22431';
-  background-color: '#E8C4C6';
+  color: white;
+  background-color: #DB454F;
   height: 64px;
   justify-content: center;
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  position: sticky;
 }

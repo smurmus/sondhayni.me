@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import portraitSketch from '../../images/self_portrait_sketch.png';
+import { CustomImage } from '../utils';
 import { device } from '../../utils/mediaQuery';
-import { lightBeige } from '../../utils/colors';
+import { offwhite, lightBeige } from '../../utils/colors';
 
 const Greeting = styled.div`
 	display: flex;
@@ -21,36 +22,30 @@ const Greeting = styled.div`
 
 const Name = styled.div`
 	margin-top: 8px;
+	margin-bottom: 16px;
 `;
 
 const SelfPortait = styled.div`
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: center;
-	position: relative;
-	flex: 1;
-	// margin-top: 16px;
-	background-color: #fff5ee;
+	height: 100%;
+	margin-bottom: 48px;
 `;
 
 const Sketch = styled.img`
-	height: auto;
+	// height: auto;
 	width: 380px;
-	resize: auto;
-	right: 0;
-
-  @media ${device.tablet} {
-		position: absolute;
-  }
+	// resize: auto;
 `;
 
 const Branding = styled.div`
 
-		@media ${device.tablet} {
-			padding-left: 56px;
-		}
-	`;
+	@media ${device.tablet} {
+		padding-left: 56px;
+	}
+`;
+
 
 const Intro = () => {
 	return (
@@ -60,16 +55,19 @@ const Intro = () => {
 				<h0>
 					<Name>
 						sondhayni
-				</Name>
+					</Name>
 				</h0>
 				<Branding>
 					<h2>
 						& I’m an interdisciplinary maker of art + tech who cares deeply about people and possibilities.
 					</h2>
-					<h5>During the day I build things @shoguninc.</h5>
+					<h5>During the day I build things @hearth.</h5>
 				</Branding>
 			</Greeting>
-			<Sketch src={portraitSketch} />
+			{/* <Sketch src={portraitSketch} /> */}
+			<div style={{ width: 380 }}>
+				<CustomImage src="self_portrait_sketch.png" alt="self portrait sketch" />
+			</div>
 		</SelfPortait>
 	);
 }

@@ -5,4 +5,5 @@ export const lightBlue = '#e5f6f8';
 export const transparentBlue = 'rgba(237, 237, 240, 0.47)';
 export const slate = 'darkslategray';
 export const white = '#ffffff';
+export const offwhite = '#FFFCFB';
 export const red = '#E22431';

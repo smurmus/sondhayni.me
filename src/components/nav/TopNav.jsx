@@ -8,6 +8,7 @@ const Navigation = styled.nav`
   position: fixed;
   text-decoration: none;
   width: 100%;
+  top: 0;
   height: 72px;
   display: flex;
   background-color: #fff5ee;
