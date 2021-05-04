@@ -30,8 +30,8 @@
 }
 
 .bigTitle {
-	font-size: 48px;
-	line-height: 60px;
+	font-size: 2.5rem;
+	line-height: 2.75rem;
 	font-family: Petrona;
 	font-style: normal;
 	font-weight: 500;
@@ -71,8 +71,8 @@ header {
 }
 
 sectionTitle {
-	font-size: 32px;
-	line-height: 44px;
+	font-size: 1.75rem;
+	line-height: 2.25;
 	font-weight: 600;
 	font-family: Barlow;
 	font-style: normal;
@@ -85,7 +85,7 @@ p {
 }
 
 section {
-	margin-top: 48px;	
+	margin-top: 32px;	
 }
 
 row {
@@ -102,10 +102,17 @@ column {
 .contentContainer {
 	background-color: #fff5ee;
 	/* background-color: #FFFCFB; */
-	padding: 100px 200px;
+	padding: 100px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+	.contentContainer {
+		padding: 64px 48px;
+	}
 }
 
 .content {
@@ -184,7 +191,7 @@ column {
 /* design & solution section */
 
 .wireframe {
-	width: 800px;
+	width: 100%;
 	max-height: 600px;
 }
 
@@ -228,17 +235,40 @@ bigInsight {
 	flex-direction: column;
 	/* align-items: center; */
 	/* justify-content: center; */
-	max-width: 250px;
 	background-color: #ffe9b44f;
 	/* background-color: #ffe9b4; */
 	padding: 24px;
 	border-radius: 4px;
 }
 
+.quoteRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media screen and (min-width: 760px) {
+	.userQuote {
+		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.quoteRow {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contentContainer {
+		padding: 64px 24px;
+	}
+}
+
+
 .competitor {
 	align-items: flex-start;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex: 1;
 	justify-content: space-between;
 	padding: 16px 16px 24px;

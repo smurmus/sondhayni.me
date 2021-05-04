@@ -222,7 +222,7 @@ const MovingApp = () => {
 						<section>
 							<header>A solution would need to have: </header>
 							<Bit height={24} />
-							<row style={{ justifyContent: 'space-between' }}>
+							<div className={style.quoteRow}>
 								<UserQuote
 									insight="Intuitive organization"
 									quote="It always takes more time than I think to go through everything while 
@@ -238,7 +238,7 @@ const MovingApp = () => {
 									quote="I have no idea how [my partner] wants some things packed, and I have to
 										remind him like 5 times before deals with it."
 								/>
-							</row>
+							</div>
 						</section>
 						<section>
 						<header>Who is this really for?* </header>
