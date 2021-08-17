@@ -14,7 +14,10 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Barlow:100,200,300,400,500,600,700,800,900']
+          families: [
+            'Barlow:100,200,300,400,500,600,700,800,900',
+            'DM Sans:400,500,600,700,800,900',
+          ]
         }
       }
     },
@@ -47,6 +50,21 @@ module.exports = {
             family: 'Petrona',
             variable: true,
             weights: ['100..900']
+          },
+          {
+            family: 'Inter',
+            variable: true,
+            weights: ['100..900']
+          },
+          {
+            family: 'Quicksand',
+            variable: true,
+            weights: ['300..700']
+          },
+          {
+            family: 'Inconsolata',
+            variable: true,
+            weights: ['200..900']
           },
         ]
       }

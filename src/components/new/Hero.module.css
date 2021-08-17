@@ -1,0 +1,34 @@
+hero {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 32px;
+	padding-right: 32px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	padding-right: 40px;
+	padding-left: 40px;
+	max-width: 500px;
+}
+
+.blue {
+	color: #52C1FF;
+}
+
+.pink {
+	color: #DD565E;
+}
+
+.deepRed {
+	color: #D20915;
+}
+
+.paleRed {
+	color: #DB454F;
+	font-weight: 600;
+}

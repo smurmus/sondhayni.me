@@ -1,0 +1,19 @@
+about {
+	margin-top: 32px;
+	display: flex;
+	height: 100%;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.paleRed {
+	color: #DB454F;
+	font-weight: 600;
+}
+
+#self-portrait {
+	max-width: 400px;
+  width: 400px;
+  height: auto;
+  padding: 0 24px;
+}
