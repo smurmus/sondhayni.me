@@ -9,7 +9,7 @@ import { PostItem } from '../components/blog';
 import style from './sandbox.module.css';
 
 const Container = styled.div`
-  background-color: #fff5ee;
+  background-color: #FFFCFB;
   height: 100vh;
   flex: 1;
   display: flex;

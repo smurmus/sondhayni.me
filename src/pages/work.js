@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 
 import { TopNav } from '../components';
 import { CustomImage } from '../components/utils';
-import { PostItem } from '../components/blog';
 import { white, lightBeige } from "../utils/colors";
 
 const Container = styled.div`
