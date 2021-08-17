@@ -6,11 +6,11 @@ import { red, darkBlue } from '../../utils/colors';
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  font-family: Barlow;
+  font-family: Inconsolata;
   font-size: 18px;
   color: ${darkBlue};
   margin: 0 16px;
-  font-weight: 600;
+  font-weight: 400;
 
   &:hover {
     color: ${red};
@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
 
 const ResumeLink = styled.a`
   text-decoration: none;
-  font-family: Barlow;
+  font-family: Inconsolata;
   font-size: 18px;
   color: ${darkBlue};
   margin: 0 16px;
@@ -59,7 +59,7 @@ const NavLinks = () => {
   return (
     <>
       <NavLink to="/about">about</NavLink>
-      <NavLink to="/work">work</NavLink>
+      {/* <NavLink to="/work">work</NavLink> */}
       <NavLink to="/sandbox">sandbox</NavLink>
       {/* <ResumeLink href={resumeURL} download>
         resume

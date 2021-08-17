@@ -11,11 +11,9 @@ const Navigation = styled.nav`
   top: 0;
   height: 72px;
   display: flex;
-  background-color: #fff5ee;
   justify-content: space-between;
+  background-color: #FFFCFB;
   margin: 0 auto;
-  padding-right: 1vw;
-  padding-left: 3vw;
   z-index: 2;
   align-self: center;
   @media (max-width: 768px) {
@@ -50,7 +48,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff5ee;
+    background-color: #FFFCFB;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -94,7 +92,10 @@ const TopNav = () => {
 
   return (
     <Navigation>
-      <Logo />
+      {/* TODO: have a dark + light mode toggle */}
+      <div style={{ display: 'flex', alignItems: 'center', paddingLeft: 24 }}>
+        <Logo />
+      </div>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
